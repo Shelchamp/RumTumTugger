@@ -5,7 +5,7 @@ class Api::SessionsController < ApplicationController
     # debugger
     if @user
       login(@user)
-      render json: ["You logged in!"]
+      render 'api/users/show'
     else
       render json: ["Your username and password do not match"], status: 401
     end
