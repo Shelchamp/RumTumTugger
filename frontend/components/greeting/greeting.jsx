@@ -35,7 +35,7 @@ const Greeting = props => {
       <h2>You {props.currentUser ? 'are' : ' are not'} logged in.</h2>
       <div className='greet'>
         <button
-          onClick={()=> props.login({username: 'user1', password: '123456'})}
+          onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
           >LOGIN</button>
         <button
           onClick={()=> props.logout()}
