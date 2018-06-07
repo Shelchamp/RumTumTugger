@@ -1,4 +1,4 @@
 class StaticPagesController < ApplicationController
-  def static_page
+  def root
   end
 end

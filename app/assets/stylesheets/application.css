@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+h1{
+  color: yellow;
+  text-shadow: 5px 5px 5px black, 10px 10px 10px white, 15px 15px 15px red, 20px 20px 20px green;
+}
+
+body{
+  background-color: #666699;
+  background-image: url("tabby.jpg");
+}
