@@ -19,7 +19,14 @@ h1{
   text-shadow: 5px 5px 5px black, 10px 10px 10px white, 15px 15px 15px red, 20px 20px 20px green;
 }
 
+h2{
+  color: white;
+  text-shadow: 2px 2px 2px black, 4px 4px 4px yellow, 6px 6px 6px purple, 8px 8px 8px green;
+}
+
 body{
   background-color: #666699;
-  background-image: url("tabby.jpg");
+  /* background-image: url("tabby.jpg"); */
+  background-image: url('https://i.imgur.com/FkI0F8z.jpg');
+  /* background-image: url('https://i.imgur.com/7maegAd.jpg'); */
 }
