@@ -17,34 +17,36 @@ class SignupForm extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     this.props.signup(this.state)
-      .then(this.props.history.push("/signup"))
+      .then(this.props.history.push("/"))
   }
 
   render () {
     return (
       <div>
         <h2>{this.props.formType}</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type='text'
-            placeholder='Email'
-            value={this.state.password}
-            onChange={this.update('email')}
-            />
-          <input
-            type='text'
-            placeholder='Password'
-            value={this.state.username}
-            onChange={this.update('username')}
-            />
-          <input
-            type='text'
-            placeholder='Username'
-            value={this.state.password}
-            onChange={this.update('password')}
-            ></input>
-          <button type='submit'>Sign up</button>
-        </form>
+        <div>
+          <form  onSubmit={this.handleSubmit} >
+            <input
+              type='text'
+              placeholder='Email'
+              value={this.state.email}
+              onChange={this.update('email')}
+              />
+            <input
+              type='text'
+              placeholder='Password'
+              value={this.state.username}
+              onChange={this.update('username')}
+              />
+            <input
+              type='text'
+              placeholder='Username'
+              value={this.state.password}
+              onChange={this.update('password')}
+              ></input>
+            <button type='submit'>Sign up</button>
+          </form>
+        </div>
       </div>
     )
   }

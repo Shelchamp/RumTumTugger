@@ -10,10 +10,10 @@ const App = () => (
   <div>
     <header>
       <h1>Welcome To Rum Tum Tugger</h1>
-      <GreetingContainer />
+      <Route path="/" component={GreetingContainer}/>
       <Switch>
-        <Route exact path='/login' component={LoginFormContainer}/>
-        <Route exact path='/signup' component={SignupFormContainer}/>
+        <Route path='/login' component={LoginFormContainer}/>
+        <Route path='/signup' component={SignupFormContainer}/>
       </Switch>
     </header>
   </div>
