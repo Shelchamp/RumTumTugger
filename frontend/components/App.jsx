@@ -3,8 +3,10 @@ import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (
   <div>
-    <h1>Welcome To Rum Tum Tugger</h1>
-    <GreetingContainer />
+    <header>
+      <h1>Welcome To Rum Tum Tugger</h1>
+      <GreetingContainer />
+    </header>
   </div>
 );
 

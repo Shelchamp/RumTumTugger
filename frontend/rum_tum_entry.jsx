@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const store = configureStore();
 
   window.store = store;
-  window.user = { username: 'user1',
-                  email: '123',
-                  password: '123456'
-  }
+  window.user = { username: 'Josuke',
+                  email: 'Jouske@jojo.com',
+                  password: 'CrazyDiamond'
+                }
 
 
   // window.$.ajax = $.ajax

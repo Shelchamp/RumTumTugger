@@ -30,12 +30,28 @@ h2{
 
 body{
   background-color: #666699;
-  /* background-image: url("tabby.jpg"); */
   background-image: url('https://i.imgur.com/FkI0F8z.jpg');
   /* background-image: url('https://i.imgur.com/7maegAd.jpg'); */
 }
 
-.greet{
+.button-div{
   display: flex;
   justify-content: center;
+}
+
+.butts{
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 10%
+}
+
+.session-link{
+  display: flex;
+  justify-content: center;
+}
+
+.lank{
+  padding: 10px;
+  color: yellow;
+  text-shadow: black;
 }

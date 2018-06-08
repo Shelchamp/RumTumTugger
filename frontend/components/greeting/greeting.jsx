@@ -19,29 +19,42 @@ import {Link} from 'react-router-dom';
 // }
 
 const Greeting = props => {
-  const loggedInTest = () => (
-    <div>
-      <h2>You're logged in</h2>
-    </div>
-  );
-
-  const loggedOutTest = () => (
-    <div>
-      <h2>You're not logged in</h2>
-    </div>
-  );
-  return (
-    <div>
-      <h2>You {props.currentUser ? 'are' : ' are not'} logged in.</h2>
-      <div className='greet'>
+  const loggedIn = () => (
+    <div >
+      <h2>Welcome, {props.currentUser.username}.</h2>
+      <div className='button-div'>
         <button
-          onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
-          >LOGIN</button>
-        <button
+          className='butts'
           onClick={()=> props.logout()}
           >LOGOUT</button>
       </div>
     </div>
+  );
+
+  const loggedOut = () => (
+    <div>
+      <h2>You're not logged in</h2>
+      <div className='session-link'>
+        <Link to='/login' className='lank'>Login</Link>
+        <Link to='/signup'className='lank'>Sign Up</Link>
+      </div>
+      <div className='button-div'>
+        <button
+          className='butts'
+          onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
+          >Demo Login</button>
+      </div>
+    </div>
+  );
+  return ( props.currentUser ? loggedIn() : loggedOut()
+    // <div>
+    //   <h2>You {props.currentUser ? 'are' : ' are not'} logged in.</h2>
+    //   <div className='greet'>
+    //     <button
+    //       onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
+    //       >LOGIN</button>
+    //   </div>
+    // </div>
   )
 }
 
