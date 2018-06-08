@@ -22,9 +22,10 @@ const Greeting = props => {
   const loggedIn = () => (
     <div >
       <h2>Welcome, {props.currentUser.username}.</h2>
+      <h3>Shine on, you Crazy Diamond.</h3>
       <div className='button-div'>
         <button
-          className='butts'
+          className='demo-login'
           onClick={()=> props.logout()}
           >LOGOUT</button>
       </div>
@@ -40,7 +41,7 @@ const Greeting = props => {
       </div>
       <div className='button-div'>
         <button
-          className='butts'
+          className='demo-login'
           onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
           >Demo Login</button>
       </div>
