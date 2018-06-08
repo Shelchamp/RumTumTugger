@@ -42,7 +42,7 @@ const Greeting = props => {
       <div className='button-div'>
         <button
           className='demo-login'
-          onClick={()=> props.login({username: 'Josuke', password: 'CrazyDiamond'})}
+          onClick={()=> props.login({email: 'Josuke@jojo.com', password: 'CrazyDiamond'})}
           >Demo Login</button>
       </div>
     </div>
