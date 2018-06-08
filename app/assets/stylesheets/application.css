@@ -77,3 +77,27 @@ body{
   text-shadow: 2px 2px 2px black;
 
 }
+
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .bg-signup{
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url('https://i.imgur.com/iK1kAEB.gif')
+} */

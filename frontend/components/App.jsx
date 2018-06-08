@@ -10,12 +10,12 @@ const App = () => (
   <div>
     <header>
       <h1>Welcome To Rum Tum Tugger</h1>
-      <Route path="/" component={GreetingContainer}/>
-      <Switch>
-        <Route path='/login' component={LoginFormContainer}/>
-        <Route path='/signup' component={SignupFormContainer}/>
-      </Switch>
     </header>
+    <Route path="/" component={GreetingContainer}/>
+    <Switch>
+      <Route path='/login' component={LoginFormContainer}/>
+      <Route path='/signup' component={SignupFormContainer}/>
+    </Switch>
   </div>
 );
 

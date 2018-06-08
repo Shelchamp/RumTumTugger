@@ -24,21 +24,23 @@ class LoginForm extends React.Component {
     return (
       <div>
         <h2>{this.props.formType}</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type='text'
-            placeholder='Email'
-            value={this.state.username}
-            onChange={this.update('email')}
-            />
-          <input
-            type='text'
-            placeholder='Password'
-            value={this.state.password}
-            onChange={this.update('password')}
-            />
-          <button type='submit'>Next</button>
-        </form>
+        <div className="login">
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type='text'
+              placeholder='Email'
+              value={this.state.username}
+              onChange={this.update('email')}
+              />
+            <input
+              type='text'
+              placeholder='Password'
+              value={this.state.password}
+              onChange={this.update('password')}
+              />
+            <button type='submit'>Next</button>
+          </form>
+        </div>
       </div>
     )
   }

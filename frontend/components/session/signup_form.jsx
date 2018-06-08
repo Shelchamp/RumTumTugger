@@ -24,28 +24,30 @@ class SignupForm extends React.Component {
     return (
       <div>
         <h2>{this.props.formType}</h2>
-        <div>
-          <form  onSubmit={this.handleSubmit} >
-            <input
-              type='text'
-              placeholder='Email'
-              value={this.state.email}
-              onChange={this.update('email')}
-              />
-            <input
-              type='text'
-              placeholder='Password'
-              value={this.state.username}
-              onChange={this.update('username')}
-              />
-            <input
-              type='text'
-              placeholder='Username'
-              value={this.state.password}
-              onChange={this.update('password')}
-              ></input>
-            <button type='submit'>Sign up</button>
-          </form>
+        <div className='bg-signup'>
+          <div className='signup'>
+            <form  onSubmit={this.handleSubmit} >
+              <input
+                type='text'
+                placeholder='Email'
+                value={this.state.email}
+                onChange={this.update('email')}
+                />
+              <input
+                type='text'
+                placeholder='Password'
+                value={this.state.username}
+                onChange={this.update('username')}
+                />
+              <input
+                type='text'
+                placeholder='Username'
+                value={this.state.password}
+                onChange={this.update('password')}
+                ></input>
+              <button type='submit'>Sign up</button>
+            </form>
+          </div>
         </div>
       </div>
     )
