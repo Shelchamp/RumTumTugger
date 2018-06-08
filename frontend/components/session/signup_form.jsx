@@ -36,14 +36,14 @@ class SignupForm extends React.Component {
               <input
                 type='text'
                 placeholder='Password'
-                value={this.state.username}
-                onChange={this.update('username')}
+                value={this.state.password}
+                onChange={this.update('password')}
                 />
               <input
                 type='text'
                 placeholder='Username'
-                value={this.state.password}
-                onChange={this.update('password')}
+                value={this.state.username}
+                onChange={this.update('username')}
                 ></input>
               <button type='submit'>Sign up</button>
             </form>
