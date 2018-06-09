@@ -18,22 +18,3 @@ class Api::UsersController < ApplicationController
   end
 
 end
-
-# $.ajax({
-#   method: 'POST',
-#   url: '/api/users',
-#   data: { user: { username: 'user2',
-#                   email: '1',
-#                   password: '123456'
-#                 }
-#               }
-#   })
-#
-# $.ajax({
-#   method: 'POST',
-#   url: '/api/session',
-#   data: { user: { username: 'user2',
-#                   password: '123456'
-#                 }
-#               }
-#   })

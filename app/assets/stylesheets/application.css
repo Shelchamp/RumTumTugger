@@ -34,7 +34,7 @@ body{
   background-color: #666699;
   background-image: url('https://i.imgur.com/qk71sMS.gif');
   min-height: 950px;
-  min-width: 250px;
+  min-width: 540px;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -90,14 +90,24 @@ body{
   align-items: center;
 }
 
-/* .bg-signup{
+.bg-signup{
   background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
   background-position:center;
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('https://i.imgur.com/iK1kAEB.gif')
-} */
+  min-height: 40vh;
+  background-image: url('https://i.imgur.com/uCMaJZO.gif')
+}
+
+.bg-login{
+  background-repeat:no-repeat;
+
+  background-position:center;
+  min-height: 40vh;
+  background-image: url('https://i.imgur.com/rdF5eT6.gif')
+}
+
+.bg-dash{
+  background-repeat:no-repeat;
+  background-position:center;
+  min-height: 50vh;
+  background-image: url('https://i.imgur.com/AQo6tuw.gif')
+}

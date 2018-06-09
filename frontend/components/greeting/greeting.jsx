@@ -14,7 +14,7 @@ class Greeting extends React.Component {
   handleLogin(e){
     e.preventDefault();
     this.props.login({email: 'Josuke@jojo.com', password: 'CrazyDiamond'})
-      .then(this.props.history.push("/"))
+      .then(this.props.history.push("/feed"))
   }
 
   handleLogout(e){
@@ -35,6 +35,8 @@ class Greeting extends React.Component {
             className='demo-login'
             onClick={this.handleLogout}
             >LOGOUT</button>
+        </div>
+        <div className='bg-dash'>
         </div>
       </div>
     );

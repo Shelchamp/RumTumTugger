@@ -26,20 +26,28 @@ class LoginForm extends React.Component {
         <h2>{this.props.formType}</h2>
         <div className="login">
           <form onSubmit={this.handleSubmit}>
-            <input
-              type='text'
-              placeholder='Email'
-              value={this.state.username}
-              onChange={this.update('email')}
-              />
-            <input
-              type='text'
-              placeholder='Password'
-              value={this.state.password}
-              onChange={this.update('password')}
-              />
-            <button type='submit'>Next</button>
+            <div>
+              <input
+                type='text'
+                placeholder='Email'
+                value={this.state.username}
+                onChange={this.update('email')}
+                />
+            </div>
+            <div>
+              <input
+                type='text'
+                placeholder='Password'
+                value={this.state.password}
+                onChange={this.update('password')}
+                />
+            </div>
+            <div>
+              <button type='submit'>Next</button>
+            </div>
           </form>
+        </div>
+        <div className='bg-login'>
         </div>
       </div>
     )
