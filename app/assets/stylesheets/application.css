@@ -105,9 +105,20 @@ body{
   background-image: url('https://i.imgur.com/rdF5eT6.gif')
 }
 
-.bg-dash{
+/* .bg-dash{
   background-repeat:no-repeat;
   background-position:center;
   min-height: 50vh;
   background-image: url('https://i.imgur.com/AQo6tuw.gif')
+} */
+
+.post-index-item{
+  margin: auto;
+  margin-top: 5px;
+  align-items: center;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 500px;
+  min-width: 200px;
 }
