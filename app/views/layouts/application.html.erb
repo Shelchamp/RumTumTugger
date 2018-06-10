@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>Rum Tum Tugger</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <!-- <script src="../../stylesheets/random.js" type="text/javascript"></script> -->
+
+  </head>
   <body>
+
     <%= yield %>
-    <div class='background'></div>
   </body>
+
+
+
 </html>

@@ -8,15 +8,17 @@ import PostIndexContainer from './posts/post_index_container';
 import NavBar from './navbar/navbar';
 
 const App = () => (
-  <div>
+  <div className="fullscreen fade-in">
+
     <Route path="/" component={NavBar}/>
     <Route path="/" component={GreetingContainer}/>
-
     <Switch>
       <Route exact path="/feed" component={PostIndexContainer}/>
       <Route path='/login' component={LoginFormContainer}/>
       <Route path='/signup' component={SignupFormContainer}/>
     </Switch>
+
+
   </div>
 );
 

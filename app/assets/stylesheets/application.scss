@@ -23,22 +23,60 @@
 //@import "api/*";
 
 
+#root{
+  height: 100vh;
+}
+// FADING IN
+.fade-in{
+  -webkit-animation: fade-in 1s ease;
+  -moz-animation: fade-in ease-in-out 1s both;
+  -ms-animation: fade-in ease-in-out 1s both;
+  -o-animation: fade-in ease-in-out 1s both;
+  animation: fade-in 1s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+// FADING IN
 
 
-
-body{
+.fullscreen{
+  height: 100vh;
   background-color: #666699;
   background-image: url('https://i.imgur.com/qk71sMS.gif');
-  min-height: 950px;
-  min-width: 540px;
+  min-height: 300px;
+  min-width: 300px;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
-  background-position:center;
-  /* background-image: url('https://i.imgur.com/7maegAd.jpg'); */
+  background-position: 50% 50%;
 }
+
+
+// .Aligner {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+//
+// .Aligner-item {
+//   max-width: 50%;
+// }
+//
+// .Aligner-item--top {
+//   align-self: flex-start;
+// }
+//
+// .Aligner-item--bottom {
+//   align-self: flex-end;
+// }
 
 
 

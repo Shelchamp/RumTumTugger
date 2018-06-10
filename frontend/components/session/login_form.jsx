@@ -23,7 +23,6 @@ class LoginForm extends React.Component {
   render () {
     return (
       <div>
-
         <div className="login">
           <form onSubmit={this.handleSubmit}>
             <div>
@@ -53,9 +52,10 @@ class LoginForm extends React.Component {
             </div>
           </form>
         </div>
-        <div className='bg-login'>
-        </div>
+        <div className='bg-login'></div>
       </div>
+
+
     )
   }
 }

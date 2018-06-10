@@ -35,3 +35,31 @@
 ::placeholder{
   color: $place-holder;
 }
+
+.bg-login{
+  background-repeat:no-repeat;
+
+  background-position:center;
+  min-height: 40vh;
+  background-image: url('https://i.imgur.com/rdF5eT6.gif')
+}
+
+// Aligner
+
+.Aligner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
