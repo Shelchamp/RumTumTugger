@@ -5,11 +5,13 @@ import GreetingContainer from './greeting/greeting_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import PostIndexContainer from './posts/post_index_container';
-// import Modal from './modal/modal';
+import NavBar from './navbar/navbar';
 
 const App = () => (
   <div>
+    <Route path="/" component={NavBar}/>
     <Route path="/" component={GreetingContainer}/>
+
     <Switch>
       <Route exact path="/feed" component={PostIndexContainer}/>
       <Route path='/login' component={LoginFormContainer}/>
