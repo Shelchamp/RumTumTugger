@@ -1,4 +1,22 @@
+@import "../variables/*";
+
 .navbar{
   height: 54px;
-  background-color: red;
+}
+
+.nav-signup{
+  background-color: #ffffff;
+  width: 50.313px;
+  height: 22px;
+  padding: 5px 13px;
+  font-family: $hel-light;
+}
+
+.nav-login{
+  background-color: rgba(#2d2d2d, 0.13);
+  color: #ffffff;
+  width: 50.313px;
+  height: 22px;
+  padding: 5px 13px;
+  font-family: $hel-light;
 }

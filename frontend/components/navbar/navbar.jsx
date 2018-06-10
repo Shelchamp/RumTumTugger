@@ -10,18 +10,28 @@ class NavBar extends React.Component {
   render() {
     //show signup
     const currentlyOnLogin = () => (
-      <div
-        className='nav-signup'>
-        <Link to='/signup'>Signup</Link>
+      <div>
+        <Link
+          className='nav-signup'
+          to='/signup'
+          >
+          Sign up
+        </Link>
       </div>
     );
     // show login
     const currentlyOnSignup = () => (
       <div
-        className='nav-login'>
-        <Link to='/login'>Login</Link>
+        >
+        <Link
+          className='nav-login'
+          to='/login'
+          >
+          Log in
+        </Link>
       </div>
     );
+    
     let button;
     if(this.props.location.pathname === '/login'){
       button = currentlyOnLogin()

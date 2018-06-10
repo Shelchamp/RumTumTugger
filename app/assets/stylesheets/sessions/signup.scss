@@ -1,11 +1,12 @@
+@import "../variables/*";
+
 .input-signup-email{
   height: 22px;
   width: 277px;
   background-color: #ffffff;
   border-radius: 1px;
   padding: 11px 10px 11px 13px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: $hel-light;
 }
 
 .input-signup-password{
@@ -14,8 +15,7 @@
   background-color: #ffffff;
   border-radius: 1px;
   padding: 11px 10px 11px 13px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: $hel-light;
 }
 
 .input-signup-username{
@@ -24,22 +24,20 @@
   background-color: #ffffff;
   border-radius: 1px;
   padding: 11px 10px 11px 13px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: $hel-light;
 }
 
 .signup-button{
   width: 298px;
   height: 43px;
   border: 1px;
-  background-color: #2697d0;
+  background-color: $blue-button;
   color: #ffffff;
   text-align: center;
   margin: auto;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: $hel-light;
 }
 
 ::placeholder{
-  color: #858585;
+  color: $place-holder;
 }
