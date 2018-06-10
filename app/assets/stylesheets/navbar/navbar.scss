@@ -5,18 +5,59 @@
 }
 
 .nav-signup{
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: $hel-norm;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0f030c;
   background-color: #ffffff;
-  width: 50.313px;
-  height: 22px;
+  width: 76.31px;
+  height: 32px;
   padding: 5px 13px;
-  font-family: $hel-light;
 }
 
 .nav-login{
-  background-color: rgba(#2d2d2d, 0.13);
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: $hel-norm;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
-  width: 50.313px;
-  height: 22px;
+  background-color: $transparent;
+  width: 67.22px;
+  height: 32px;
   padding: 5px 13px;
-  font-family: $hel-light;
 }
+
+.nav-right{
+  float: right;
+  margin-top: 10px;
+  height: 32px;
+  margin-right: 0;
+  position: relative;
+  vertical-align: top;
+  width: 80px;
+}
+
+// display: inline-block;
+// -webkit-user-select: none;
+// -moz-user-select: none;
+// -ms-user-select: none;
+// user-select: none;
+// box-sizing: border-box;
+// cursor: pointer;
+// padding: 5px 7px;
+// border-radius: 2px;
+// font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+// font-size: 14px;
+// font-weight: 700;
+// line-height: 1.4;
+// text-decoration: none;
+// border: 1px solid #529ecc;
+// background-color: #529ecc;
+// color: #fff;

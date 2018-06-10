@@ -1,27 +1,30 @@
 @import "../variables/*";
 
 .input-login-email{
-  height: 22px;
-  width: 277px;
+  height: 44px;
+  width: 298px;
   background-color: #ffffff;
-  border-radius: 1px;
+  border-radius: 2px;
   padding: 11px 10px 11px 13px;
   font-family: $hel-light;
+  box-sizing: border-box;
 }
 
 .input-login-password{
-  height: 22px;
-  width: 277px;
+  height: 32px;
+  width: 298px;
   background-color: #ffffff;
-  border-radius: 1px;
+  border-radius: 2px;
   padding: 11px 10px 11px 13px;
   font-family: $hel-light;
+  box-sizing: border-box;
 }
 
 .next{
   width: 298px;
   height: 43px;
-  border: 1px;
+  font-weight: 525;
+  border-radius: 2px;
   background-color: $blue-button;
   color: #ffffff;
   text-align: center;

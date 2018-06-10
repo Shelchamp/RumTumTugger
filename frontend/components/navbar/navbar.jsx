@@ -10,7 +10,9 @@ class NavBar extends React.Component {
   render() {
     //show signup
     const currentlyOnLogin = () => (
-      <div>
+      <div
+        className='nav-right'
+        >
         <Link
           className='nav-signup'
           to='/signup'
@@ -22,6 +24,7 @@ class NavBar extends React.Component {
     // show login
     const currentlyOnSignup = () => (
       <div
+        className='nav-right'
         >
         <Link
           className='nav-login'
@@ -31,7 +34,7 @@ class NavBar extends React.Component {
         </Link>
       </div>
     );
-    
+
     let button;
     if(this.props.location.pathname === '/login'){
       button = currentlyOnLogin()

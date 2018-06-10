@@ -1,6 +1,7 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "../variables/*";
 
 h1{
   color: yellow;
@@ -63,14 +64,14 @@ h1{
 
 .demo-login{
   width: 298px;
-  height: 43px;
-  border: 1px;
-  background-color: #2697d0;
+  height: 44px;
+  font-weight: 525;
+  border-radius: 2px;
+  font-weight: 600;
+  background-color: $blue-button;
   color: #ffffff;
   text-align: center;
   margin: auto;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: $hel-light;
 
 }
