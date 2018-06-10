@@ -1,0 +1,14 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post-index-item{
+  margin: auto;
+  margin-top: 5px;
+  align-items: center;
+  background-color: rgb(52, 90, 187);
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 500px;
+  min-width: 200px;
+}

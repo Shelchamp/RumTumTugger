@@ -23,11 +23,12 @@ class LoginForm extends React.Component {
   render () {
     return (
       <div>
-        <h2>{this.props.formType}</h2>
+
         <div className="login">
           <form onSubmit={this.handleSubmit}>
             <div>
               <input
+                className='input-login-email'
                 type='text'
                 placeholder='Email'
                 value={this.state.username}
@@ -36,6 +37,7 @@ class LoginForm extends React.Component {
             </div>
             <div>
               <input
+                className='input-login-password'
                 type='text'
                 placeholder='Password'
                 value={this.state.password}
@@ -43,7 +45,11 @@ class LoginForm extends React.Component {
                 />
             </div>
             <div>
-              <button type='submit'>Next</button>
+              <button
+                className='next'
+                type='submit'
+                >Next
+              </button>
             </div>
           </form>
         </div>

@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+// CSS reset
+//@import "base/reset.scss";
+
+// Core
+
+
+// Components
+//@import "api/*";
+
+
+
+
+body{
+  background-color: #666699;
+  background-image: url('https://i.imgur.com/qk71sMS.gif');
+  min-height: 950px;
+  min-width: 540px;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  /* background-image: url('https://i.imgur.com/7maegAd.jpg'); */
+}
+
+
+
+
+
+/* .bg-dash{
+  background-repeat:no-repeat;
+  background-position:center;
+  min-height: 50vh;
+  background-image: url('https://i.imgur.com/AQo6tuw.gif')
+} */
