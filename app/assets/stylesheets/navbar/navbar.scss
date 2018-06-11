@@ -1,10 +1,50 @@
 @import "../variables/*";
 
+.search-field[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    height: 31px;
+    width: 491px;
+    border-radius: 2px;
+    padding: 1px 10px 2px 39px;
+    margin-top: 10px;
+    font-family: $hel-norm;
+    // box-sizing: border-box;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search-field[type=text]:focus {
+    background-color: #ffffff;
+}
+
 .navbar{
   height: 54px;
   padding-right: 20px;
 }
 
+.logo{
+  float: left;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  margin-right: -3px;
+  // display: inline-block;
+
+}
+
+.logo .png-logo{
+  padding: 11px 18px 6px 22px;
+  height: 35px;
+  width: 21px;
+  font-style: $hel-norm;
+  // background: url("https://i.imgur.com/NG05NYX.png") 22px 11px no-repeat;
+  background-size: 19px 33px;
+}
+
+
+.search-field{
+  width: 540px;
+}
 .nav-signup{
   display: inline-block;
   box-sizing: border-box;

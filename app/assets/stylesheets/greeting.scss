@@ -1,7 +1,13 @@
-h2, h3{
+@import "./variables/*";
+
+.welcome{
   display: flex;
   justify-content: center;
   color: yellow;
   text-shadow: 2px 2px 2px black;
   font-family: 'Acme', sans-serif;
+}
+
+.cat{
+  background-color: $transparent;
 }

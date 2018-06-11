@@ -28,8 +28,8 @@ class Greeting extends React.Component {
   render () {
     const loggedIn = () => (
       <div >
-        <h2>Welcome, {this.props.currentUser.username}.</h2>
-        <h3>Shine on, you Crazy Diamond.</h3>
+        <h2 className="welcome">Welcome, {this.props.currentUser.username}.</h2>
+        <h3 className="welcome">Shine on, you Crazy Diamond.</h3>
         <div className='button-div'>
           <button
             className='demo-login'
@@ -43,7 +43,7 @@ class Greeting extends React.Component {
 
     const loggedOut = () => (
       <div>
-        <h2>You're not logged in</h2>
+        <h2 className="welcome">You're not logged in</h2>
         <div className='session-link'>
           <Link to='/login' className='lank'>Login</Link>
           <Link to='/signup'className='lank'>Sign Up</Link>
@@ -56,7 +56,11 @@ class Greeting extends React.Component {
         </div>
       </div>
     );
-    return ( this.props.currentUser ? loggedIn() : loggedOut()
+    return (
+      <div>
+
+        {this.props.currentUser ? loggedIn() : loggedOut()}
+      </div>
 
     )
   }

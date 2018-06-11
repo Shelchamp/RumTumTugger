@@ -44,7 +44,19 @@ class NavBar extends React.Component {
 
     return (
       <div className="navbar">
-            {button}
+        <h1 className="logo">
+          <div className="png-logo">rtt</div>
+          <div className="logo-img"></div>
+        </h1>
+
+          <input
+            className='search-field'
+            type="text"
+            placeholder="Search RumTumTugger"
+            name="q"
+            />
+
+        {button}
       </div>
     )
   }
