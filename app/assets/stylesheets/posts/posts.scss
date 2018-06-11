@@ -3,18 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "../variables/*";
 
-.post-container{
-  margin: auto;
-  margin-top: 5px;
-  align-items: center;
-  // background-color: $tumblr-back;
-  // border: 1px solid black;
-  // border-radius: 2px;
-  // width: 540px;
-  // min-height: 100px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  // margin: 0 0 20px;
+.post-index-item{
+  // background-color: blue;
 }
 
 .post.post-full{
@@ -24,7 +14,26 @@
   padding: 15px 00;
   word-wrap: break-word;
   border-radius: 30px;
+  align-items: center;
+  margin: auto;
+  margin-top: 22px;
 }
+
+
+.post-container{
+  margin: auto;
+  margin-top: 5px;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 540px;
+  min-height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 0 20px;
+}
+
 
 .post{
   box-sizing: border-box;
@@ -164,10 +173,26 @@
   vertical-align: top;
 }
 
+.post-controls .post-controls-inner{
+  height: 45px;
+  font-size: 0;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.post-controls .post-control.post-controller-icon{
+  width: 24px;
+}
+
 .post-controls .post-control:first-child {
   margin-left: 0;
 }
 
 .post-controls .post-control{
-
+  margin: 10px 0 10px 12px;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  height: 24px;
+  cursor: pointer;
 }

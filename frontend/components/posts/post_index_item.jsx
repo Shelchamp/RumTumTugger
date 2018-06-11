@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PostIndexItem = props => (
-  <li className="post-container">
+  <li className="post-index-item">
     <div className="post post-full">
       <div className="post-avatar">
         <div className="post-avatarwrapper"></div>
@@ -18,16 +18,16 @@ const PostIndexItem = props => (
         </div>
         <div className="post-tags">
           <div className="post-tags-inner">
-            TEST TAG
+            TAGS
           </div>
         </div>
         <div className="post-footer">
           <div className="post-notes">
-            <div className="post-notes-inner">TEST</div>
+            <div className="post-notes-inner">NOTES</div>
           </div>
           <div className="post-controls">
             <div className="post-controls-inner">
-              
+              <div className="post-control post-controller-icon">ICON</div>
             </div>
           </div>
         </div>

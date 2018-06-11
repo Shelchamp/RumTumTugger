@@ -22,9 +22,19 @@
 // Components
 @import "variables/*";
 
+html {
+  background: url('https://i.imgur.com/qk71sMS.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+  min-width: 300px;
+}
 
 #root{
   height: 100vh;
+  overflow: overlay;
 }
 // FADING IN
 .fade-in{
@@ -47,8 +57,8 @@
 
 .fullscreen{
   height: 100vh;
-  background-color: $tumblr-back;
-  background-image: url('https://i.imgur.com/qk71sMS.gif');
+  // background-color: $tumblr-back;
+  // background-image: url('https://i.imgur.com/qk71sMS.gif');
   min-height: 300px;
   min-width: 300px;
   background-repeat:no-repeat;

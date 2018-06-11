@@ -8,6 +8,8 @@
 
 User.destroy_all
 
+
+
 josuke = {
   username: 'Josuke',
   email: 'Josuke@jojo.com',
@@ -29,49 +31,57 @@ user2 = User.create(kira)
 
 Post.destroy_all
 
-test_post1 = {
+10.times { Post.create(
   post_type: 'text',
-  title: 'Look at my horse, my horse is amazing.',
-  body: 'Give it a lick, it tastes just like raisins.',
+  title: Faker::RuPaul.queen,
+  body: Faker::RuPaul.quote,
   image_url: '',
-  user_id: user1.id
-}
+  user_id: [user1.id, user2.id].sample
+  )}
 
-test_post2 = {
-  post_type: 'text',
-  title: 'Knees weak',
-  body: 'Arms are heavy',
-  image_url: '',
-  user_id: user1.id
-
-}
-
-test_post3 = {
-  post_type: 'text',
-  title: 'Vomit on your sweater already',
-  body: 'Mom\'s spaghetti',
-  image_url: '',
-  user_id: user1.id
-}
-
-test_post4 = {
-  post_type: 'text',
-  title: 'Never gonna give you up',
-  body: 'Never gonna let you down',
-  image_url: '',
-  user_id: user2.id
-}
-
-test_post5 = {
-  post_type: 'text',
-  title: 'Never gonna turn around',
-  body: 'And desert you',
-  image_url: '',
-  user_id: user2.id
-}
-
-post1 = Post.create(test_post1)
-post2 = Post.create(test_post2)
-post3 = Post.create(test_post3)
-post4 = Post.create(test_post4)
-post5 = Post.create(test_post5)
+# test_post1 = {
+#   post_type: 'text',
+#   title: 'Look at my horse, my horse is amazing.',
+#   body: 'Give it a lick, it tastes just like raisins.',
+#   image_url: '',
+#   user_id: user1.id
+# }
+#
+# test_post2 = {
+#   post_type: 'text',
+#   title: 'Knees weak',
+#   body: 'Arms are heavy',
+#   image_url: '',
+#   user_id: user1.id
+#
+# }
+#
+# test_post3 = {
+#   post_type: 'text',
+#   title: 'Vomit on your sweater already',
+#   body: 'Mom\'s spaghetti',
+#   image_url: '',
+#   user_id: user1.id
+# }
+#
+# test_post4 = {
+#   post_type: 'text',
+#   title: 'Never gonna give you up',
+#   body: 'Never gonna let you down',
+#   image_url: '',
+#   user_id: user2.id
+# }
+#
+# test_post5 = {
+#   post_type: 'text',
+#   title: 'Never gonna turn around',
+#   body: 'And desert you',
+#   image_url: '',
+#   user_id: user2.id
+# }
+#
+# post1 = Post.create(test_post1)
+# post2 = Post.create(test_post2)
+# post3 = Post.create(test_post3)
+# post4 = Post.create(test_post4)
+# post5 = Post.create(test_post5)

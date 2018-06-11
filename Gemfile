@@ -28,6 +28,7 @@ gem 'annotate'
 gem 'pry-rails'
 gem 'jquery-rails'
 gem 'rails_12factor'
+gem 'faker'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
