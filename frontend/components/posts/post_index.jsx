@@ -8,6 +8,7 @@ class PostIndex extends React.Component {
   }
 
   render(){
+
     return (
       <div>
         <ul>
@@ -15,7 +16,8 @@ class PostIndex extends React.Component {
             this.props.posts.map( post => (
               <PostIndexItem
                 post={post}
-                key={post.id}/>
+                key={post.id}
+              />
             ))
           }
         </ul>
