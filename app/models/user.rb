@@ -24,7 +24,10 @@ class User < ApplicationRecord
   attr_reader :password
 
   #write associations for posts and followers
-  has_many :posts
+  has_many :posts,
+  primary_key: :id,
+  foreign_key: :user_id,
+  class_name: :Post
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)

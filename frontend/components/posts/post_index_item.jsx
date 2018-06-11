@@ -1,16 +1,39 @@
 import React from 'react';
 
 const PostIndexItem = props => (
-  <div className='post-index-item'>
-    <div claaName="post-avatar">
-      <div className="post-avatarwrapper">
+  <li className="post-container">
+    <div className="post post-full">
+      <div className="post-avatar">
+        <div className="post-avatarwrapper"></div>
+      </div>
+      <div className="post-wrapper">
+        <div className="post-header">
+          <div className="post-info">Test username</div>
+        </div>
+        <div className="post-content">
+          <div className="post-container">
+            <div className="post-title">{props.post.title}</div>
+            <div className="post-body">{props.post.body}</div>
+          </div>
+        </div>
+        <div className="post-tags">
+          <div className="post-tags-inner">
+            TEST TAG
+          </div>
+        </div>
+        <div className="post-footer">
+          <div className="post-notes">
+            <div className="post-notes-inner">TEST</div>
+          </div>
+          <div className="post-controls">
+            <div className="post-controls-inner">
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="post-wrapper">
-      <h3>{props.post.title}</h3>
-      <h1>{props.post.body}</h1>
-    </div>
-  </div>
+  </li>
 );
 
 export default PostIndexItem;

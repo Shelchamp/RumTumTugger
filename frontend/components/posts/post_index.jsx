@@ -11,15 +11,13 @@ class PostIndex extends React.Component {
     return (
       <div>
         <ul>
-          <li className="post-list-container">
-            {
-              this.props.posts.map( post => (
-                <PostIndexItem
-                  post={post}
-                  key={post.id}/>
-              ))
-            }
-          </li>
+          {
+            this.props.posts.map( post => (
+              <PostIndexItem
+                post={post}
+                key={post.id}/>
+            ))
+          }
         </ul>
       </div>
     )

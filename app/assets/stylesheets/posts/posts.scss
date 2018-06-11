@@ -1,14 +1,173 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "../variables/*";
 
-.post-index-item{
+.post-container{
   margin: auto;
   margin-top: 5px;
   align-items: center;
-  background-color: rgb(52, 90, 187);
-  border: 1px solid black;
-  border-radius: 2px;
+  // background-color: $tumblr-back;
+  // border: 1px solid black;
+  // border-radius: 2px;
+  // width: 540px;
+  // min-height: 100px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // margin: 0 0 20px;
+}
+
+.post.post-full{
   width: 540px;
-  min-height: 100px;
+  font-size: 14px;
+  background: #fff;
+  padding: 15px 00;
+  word-wrap: break-word;
+  border-radius: 30px;
+}
+
+.post{
+  box-sizing: border-box;
+  position: relative;
+}
+
+.post-avatar{
+  border-radius: 3px;
+  background-color: $tumblr-back;
+  text-decoration: none;
+  position: absolute;
+  overflow: visible;
+  display: block;
+  width: 64px;
+  left: -85px;
+  top: 0;
+}
+
+.post-header{
+  color: #8f8f8f;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-size: 13px;
+  margin: -3px 0 13px;
+  line-height: 20px;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.post-full .post-wrapper{
+  zoom: 1;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.post-header .post.post-full{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-full .post-header{
+  font-size: 13px;
+  margin: -3px 0 13px;
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.post-content .post-title{
+  font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.post.post-full .post-title{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-full, .post-title{
+  margin-bottom: 10px;
+}
+
+.post.post-full .post-body{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-full .post-body{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.post .post-body{
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.post-full .post-tags{
+  color: #8f8f8f;
+  padding: 0 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.post .post-tags{
+  margin-top: 15px;
+}
+
+
+.post .post-tags-inner{
+  float: left;
+  position: relative;
+}
+
+.post-footer{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.post-full .post-footer{
+  zoom: 1;
+}
+
+.post-full .post-footer{
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  height: 45px;
+  font-weight: bold;
+  color: #8f8f8f;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  line-height: 45px;
+}
+
+.post-full .post-notes{
+  display: table-cell;
+  width: 100%;
+  vertical-align: top;
+}
+
+.post-full .post-notes-inner{
+  padding-right: 10px;
+}
+
+.post-controls{
+  display: table-cell;
+  width: 100%;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.post-controls .post-control:first-child {
+  margin-left: 0;
+}
+
+.post-controls .post-control{
+
 }
