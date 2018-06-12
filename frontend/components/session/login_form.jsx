@@ -9,7 +9,6 @@ class LoginForm extends React.Component {
   }
 
   componentDidMount(){
-    debugger
     this.props.removeErrors();
   }
 
@@ -45,7 +44,7 @@ class LoginForm extends React.Component {
   render () {
     return (
       <div>
-        <div className="login">
+        <div className="login fade-in">
           <form onSubmit={this.handleSubmit}>
             <div>
               <input

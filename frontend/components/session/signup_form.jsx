@@ -4,13 +4,11 @@ import {withRouter} from 'react-router-dom';
 class SignupForm extends React.Component {
   constructor(props){
     super(props)
-    // debugger
     this.state = props.form;
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount(){
-    debugger
     this.props.removeErrors();
   }
 
@@ -47,7 +45,7 @@ class SignupForm extends React.Component {
     return (
       <div>
 
-        <div className='signup'>
+        <div className='signup fade-in'>
           <form  onSubmit={this.handleSubmit} >
             <div>
               <input

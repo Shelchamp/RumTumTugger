@@ -58,7 +58,7 @@ class Greeting extends React.Component {
       </div>
     );
     return (
-      <div>
+      <div className="fade-in">
 
         {this.props.currentUser ? loggedIn() : loggedOut()}
       </div>
