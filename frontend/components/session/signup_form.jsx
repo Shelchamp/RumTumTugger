@@ -25,7 +25,10 @@ class SignupForm extends React.Component {
       <ul>
         {
           this.props.errors.map((error, i) =>(
-            <li key={`error-${i}`}>
+            <li
+              key={`error-${i}`}
+              className="errors"
+              >
               {error}
             </li>
           ))
@@ -67,6 +70,9 @@ class SignupForm extends React.Component {
                 onChange={this.update('username')}
                 />
             </div>
+            {/* ERRORS */}
+              {this.renderErrors()}
+            {/* ERRORS */}
             <div>
               <button
                 className='signup-button'

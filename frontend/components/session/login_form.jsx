@@ -57,9 +57,9 @@ class LoginForm extends React.Component {
                 onChange={this.update('password')}
                 />
             </div>
-            <div className='errors'>
+            {/* ERRORS */}
               {this.renderErrors()}
-            </div>
+            {/* ERRORS */}
             <div>
               <button
                 className='next'
