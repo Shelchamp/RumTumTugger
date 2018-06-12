@@ -63,3 +63,32 @@
   font-family: $hel-light;
 
 }
+
+.signup-errors{
+  margin: 15px 0 0 0;
+  max-height: 300px;
+  max-width: 298px;
+  opacity: 1;
+  list-style-type: none;
+  border-radius: 2px;
+  padding: 0;
+  overflow: hidden;
+  // transition-property: max-height, opacity, margin;
+  // transition-duration: 0.5s;
+  // transition-delay: 0.5s;
+  // transition-timing-function: ease;
+}
+
+::placeholder{
+  color: $place-holder;
+}
+
+.errors{
+  text-align: center;
+  padding: 14px 15px;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  line-height: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.33);
+}

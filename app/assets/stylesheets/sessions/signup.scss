@@ -34,13 +34,11 @@
   background-color: $blue-button;
   color: #ffffff;
   text-align: center;
-  margin: auto;
+  margin: 13px 0 0 0;
   font-family: $hel-light;
 }
 
-::placeholder{
-  color: $place-holder;
-}
+
 
 .bg-signup{
   background-repeat:no-repeat;
