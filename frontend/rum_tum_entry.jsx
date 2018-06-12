@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }
 
   //TESTING
+  window.user = {'username': 'hi', 'password': 'there'}
+  window.login = login
+  window.signup = signup
+  window.logout = logout
   window.store = store
   window.fetchPosts = fetchPosts
   window.fetchUsers = fetchUsers

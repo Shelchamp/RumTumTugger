@@ -2,10 +2,16 @@ import {login} from '../../actions/session_actions';
 import { connect } from 'react-redux';
 import LoginForm from './login_form';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
+// const mapStateToProps = ({errors}) => {
   let formType = 'login';
   let form = { email: '', password: ''};
-  return { form, formType }
+  return {
+    form,
+    formType,
+    errors: state.errors.session
+    // errors: errors.session
+  }
 }
 
 const mapDispatchToProps = dispatch => ({

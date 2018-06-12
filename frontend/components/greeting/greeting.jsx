@@ -17,11 +17,11 @@ class Greeting extends React.Component {
       .then(this.props.history.push("/feed"))
   }
 
-  handleLogout(e){
-    e.preventDefault();
-    this.props.logout()
-      .then(this.props.history.push("/login"))
-  }
+  // handleLogout(e){
+  //   e.preventDefault();
+  //   this.props.logout()
+  //     .then(this.props.history.push("/login"))
+  // }
 
 
 

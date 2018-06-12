@@ -7,7 +7,7 @@ class Api::SessionsController < ApplicationController
       login(@user)
       render 'api/users/show'
     else
-      render json: ["Your username and password do not match"], status: 401
+      render json: ["Your email and password do not match"], status: 401
     end
   end
 
@@ -18,7 +18,7 @@ class Api::SessionsController < ApplicationController
       logout
       render json: {}
     else
-      render json: ["Nobody signed in"], status: 404
+      render json: ["Can't log out if you're not signed in"], status: 404
     end
   end
 
