@@ -45,7 +45,7 @@ class NavBar extends React.Component {
     return (
       <div className="navbar">
         <h1 className="logo">
-          <Link to="/"><div className="png-logo">rtt</div></Link>
+          <Link to="/feed"><div className="png-logo">rtt</div></Link>
           <div className="logo-img"></div>
         </h1>
 

@@ -5,6 +5,7 @@ import configureStore from './store/store';
 import Root from './components/root';
 import { login, signup, logout } from './actions/session_actions'
 import { fetchPosts } from './actions/post_actions';
+import { fetchUsers } from './actions/user_actions';
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   //TESTING
   window.store = store
   window.fetchPosts = fetchPosts
+  window.fetchUsers = fetchUsers
   //TESTING
 
   ReactDOM.render(<Root store={store}/>, root);
