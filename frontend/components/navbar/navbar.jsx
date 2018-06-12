@@ -5,7 +5,17 @@ import { Link } from 'react-router-dom';
 class NavBar extends React.Component {
   constructor(props){
     super(props)
+    // debugger
+    this.handleLogout = this.handleLogout.bind(this);
   }
+
+
+  handleLogout(e){
+    e.preventDefault();
+    this.props.logout()
+      .then(this.props.history.push("/login"))
+  }
+
 
   render() {
     //show signup
@@ -35,11 +45,22 @@ class NavBar extends React.Component {
       </div>
     );
 
+    const logoutButton = () =>(
+      <div className='nav-right'>
+        <button
+          className='nav-logout'
+          onClick={this.handleLogout}
+          >LOGOUT</button>
+      </div>
+    )
+
     let button;
     if(this.props.location.pathname === '/login'){
       button = currentlyOnLogin()
     } else if (this.props.location.pathname ==='/signup'){
       button = currentlyOnSignup()
+    } else if (this.props.location.pathname ==='/feed'){
+      button = logoutButton()
     }
 
     return (

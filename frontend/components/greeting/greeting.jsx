@@ -5,7 +5,7 @@ class Greeting extends React.Component {
 
   constructor(props){
     super(props)
-
+    // debugger
     this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
 

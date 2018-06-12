@@ -88,6 +88,20 @@
   width: 80px;
 }
 
+.nav-logout{
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: $hel-norm;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $tumblr-back;
+  width: 76.31px;
+  height: 32px;
+  padding-left: 8px;
+}
 // display: inline-block;
 // -webkit-user-select: none;
 // -moz-user-select: none;
