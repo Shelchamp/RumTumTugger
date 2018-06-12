@@ -17,7 +17,7 @@ const App = () => (
       <ProtectedRoute exact path="/feed" component={PostIndexContainer}/>
       <AuthRoute path='/signup' component={SignupFormContainer}/>
       <AuthRoute path='/login' component={LoginFormContainer}/>
-      <Redirect to='/login' />
+      <Redirect exact to='/login' />
     </Switch>
 
   </div>

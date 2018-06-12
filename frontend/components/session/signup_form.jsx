@@ -4,8 +4,14 @@ import {withRouter} from 'react-router-dom';
 class SignupForm extends React.Component {
   constructor(props){
     super(props)
+    // debugger
     this.state = props.form;
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount(){
+    debugger
+    this.props.removeErrors();
   }
 
   update(field){
