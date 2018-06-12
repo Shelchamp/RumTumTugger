@@ -8,8 +8,6 @@
 
 User.destroy_all
 
-
-
 josuke = {
   username: 'Josuke',
   email: 'Josuke@jojo.com',

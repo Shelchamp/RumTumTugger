@@ -6,7 +6,7 @@ export const fetchPosts = () => dispatch =>(
     .then(posts => dispatch(receiveAllPosts(posts)))
 )
 
-const receiveAllPosts = (posts) => ({
+const receiveAllPosts = (payload) => ({
   type: RECEIVE_ALL_POSTS,
-  posts
+  payload
 })

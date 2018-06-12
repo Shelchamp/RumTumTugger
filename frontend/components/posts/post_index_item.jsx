@@ -8,7 +8,7 @@ const PostIndexItem = props => (
       </div>
       <div className="post-wrapper">
         <div className="post-header">
-          <div className="post-info">TEST USERNAME</div>
+          <div className="post-info">{props.user}</div>
         </div>
         <div className="post-content">
           <div className="post-container">

@@ -8,7 +8,7 @@ class PostIndex extends React.Component {
   }
 
   render(){
-
+    // debugger
     return (
       <div>
         <ul>
@@ -17,6 +17,7 @@ class PostIndex extends React.Component {
               <PostIndexItem
                 post={post}
                 key={post.id}
+
               />
             ))
           }
