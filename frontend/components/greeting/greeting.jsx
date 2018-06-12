@@ -7,7 +7,7 @@ class Greeting extends React.Component {
     super(props)
     // debugger
     this.handleLogin = this.handleLogin.bind(this);
-    this.handleLogout = this.handleLogout.bind(this);
+    // this.handleLogout = this.handleLogout.bind(this);
 
   }
 
@@ -30,24 +30,25 @@ class Greeting extends React.Component {
       <div >
         <h2 className="welcome">Welcome, {this.props.currentUser.username}.</h2>
         <h3 className="welcome">Shine on, you Crazy Diamond.</h3>
-        <div className='button-div'>
+        {/*<div className='button-div'>
           <button
             className='demo-login'
             onClick={this.handleLogout}
             >LOGOUT</button>
         </div>
         <div className='bg-dash'>
-        </div>
+        </div>*/}
       </div>
     );
 
     const loggedOut = () => (
       <div>
-        <h2 className="welcome">You're not logged in</h2>
+        {/*<h2 className="welcome">You're not logged in</h2>
         <div className='session-link'>
           <Link to='/login' className='lank'>Login</Link>
           <Link to='/signup'className='lank'>Sign Up</Link>
         </div>
+      */}
         <div className='button-div'>
           <button
             className='demo-login'
