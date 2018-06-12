@@ -9,10 +9,10 @@ class Api::PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    # @post.user_id = current_user.id
-    @post.user_id = 33
+    @post.user_id = current_user.id
+    # @post.user_id = 34
     if @post.save
-      render json: ['your post has been saved']
+      render json: 'api/posts/show'
     else
       # render json: ['wrongzo']
       render json: @post.errors.full_messages, status: 422
