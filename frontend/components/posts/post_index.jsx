@@ -1,6 +1,6 @@
 import React from 'react';
 import PostIndexItem from './post_index_item';
-
+import CreatePostContainer from './create_post_container';
 class PostIndex extends React.Component {
 
   componentDidMount(){
@@ -8,9 +8,11 @@ class PostIndex extends React.Component {
     this.props.fetchUsers();
   }
 
+
   render(){
     return (
       <div className="post-index-container fade-in">
+        <CreatePostContainer/>
         <ol>
           {
             this.props.posts.map( post => (

@@ -33,6 +33,10 @@ html {
   min-width: 300px;
 }
 
+li, ol, ul {
+  list-style-type: none;
+}
+
 #root{
   height: 100vh;
   overflow: overlay;
