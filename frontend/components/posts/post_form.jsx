@@ -34,6 +34,7 @@ class PostForm extends React.Component {
           <div className='post-container'>
             <div className='post-container-inner post'>
               <div className='post-form-header clearfix'>
+              </div>
                 <form onSubmit={this.handleSubmit}>
                   <div className='post-form-form post-content-text'>
                     <div className='title-field'>
@@ -54,8 +55,8 @@ class PostForm extends React.Component {
                     <div className='caption-field'>
                       <div className='editor-slot'>
                         <div className='editor editor-richtext'>
-                          <textarea
-                            className='create-text-post-body'
+                          <input
+                            className='create-text-post-body editor-placeholder'
                             value={this.state.body}
                             onChange={this.update('body')}
                             placeholder='Your text here'
@@ -71,6 +72,7 @@ class PostForm extends React.Component {
                           <div className='editor-wrapper'>
                             <div className='editor-slot'>
                               <div className='editor editor-plaintext'>
+                                <div className='editor-placeholder'></div>
                               </div>
                             </div>
                           </div>
@@ -78,9 +80,24 @@ class PostForm extends React.Component {
                       </div>
                     </div>
                   </div>
-                <button type='submit'>POST</button>
+                  <div className='post-form-guard'></div>
+                  <div className='post-form-bottom'>
+                    <div className='controls-container'>
+                      <div className='control left'>
+                        <button className='tx-button'>Close</button>
+                      </div>
+                      <div className='control right'>
+                        {/* <div className='post-form-save-button'>
+                           <div className='split-button'> */}
+                            <button
+                              className='tx-button create-post-button'
+                              type='submit'>POST</button>
+                        {/*   </div>
+                         </div> */}
+                      </div>
+                    </div>
+                  </div>
               </form>
-              </div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
   background: #fff;
   padding: 15px 0 0;
   word-wrap: break-word;
-  border-radius: 30px;
+  border-radius: 3px;
   align-items: center;
   margin: auto;
   margin-top: 22px;
@@ -25,7 +25,7 @@
   margin-top: 5px;
   align-items: center;
   background-color: #ffffff;
-  border: 1px solid black;
+  // border: 1px solid rgba(69, 69, 69, 0.07);
   border-radius: 2px;
   width: 540px;
   min-height: 100px;
@@ -156,6 +156,7 @@
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   line-height: 45px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07)
 }
 
 .post-full .post-notes{
