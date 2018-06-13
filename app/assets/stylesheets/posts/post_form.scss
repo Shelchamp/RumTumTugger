@@ -218,7 +218,7 @@
   cursor: pointer;
   padding: 5px 7px;
   border-radius: 2px;
-  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-family: $hel-light;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
@@ -230,7 +230,7 @@
 
 .create-post-button{
   background-color: $blue-button;
-  color: #a2cfe6;
+  color: #fff;
 }
 
 .post-form-controls .control.right{

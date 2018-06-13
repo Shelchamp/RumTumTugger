@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 
 class PostForm extends React.Component {
   constructor(props){
@@ -84,7 +84,9 @@ class PostForm extends React.Component {
                   <div className='post-form-bottom'>
                     <div className='controls-container'>
                       <div className='control left'>
-                        <button className='tx-button'>Close</button>
+                        <Link
+                          className='tx-button'
+                          to='/feed'>Close</Link>
                       </div>
                       <div className='control right'>
                         {/* <div className='post-form-save-button'>
