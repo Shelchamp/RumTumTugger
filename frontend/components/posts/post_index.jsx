@@ -17,8 +17,6 @@ class PostIndex extends React.Component {
         <ol>
             {/*
               */}
-            
-
           {
             this.props.posts.map( post => (
               <PostIndexItem

@@ -24,7 +24,7 @@ class PostForm extends React.Component {
   render (){
     return (
       <li className='post-form post new-post-buttons-container post-forms-above-glass'>
-        <div className='post-form post-form-text post post-full fade-in'>
+        <div className='post-form post-form-text post post-full'>
           <div className='post-margin'>
             <div className='post-form-avatar'>
               <div className='channel-avatar avatar-container'>{/* AVATAR IMAGE*/}</div>

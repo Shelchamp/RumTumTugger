@@ -59,7 +59,8 @@ class NavBar extends React.Component {
       button = currentlyOnLogin()
     } else if (this.props.location.pathname ==='/signup'){
       button = currentlyOnSignup()
-    } else if (this.props.location.pathname ==='/feed'){
+    } else {
+      {/*if (this.props.location.pathname !='/')*/}
       button = logoutButton()
     }
 

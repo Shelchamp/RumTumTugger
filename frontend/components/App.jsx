@@ -10,7 +10,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import CreatePostContainer from './posts/create_post_container';
 import PostFormNav from './posts/post_form_nav';
 const App = () => (
-  <div className="fullscreen fade-in">
+  <div className="fullscreen">
 
     <Route path="/" component={NavBarContainer}/>
     <Route path="/" component={GreetingContainer}/>
