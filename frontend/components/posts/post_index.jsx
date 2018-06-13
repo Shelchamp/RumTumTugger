@@ -1,5 +1,6 @@
 import React from 'react';
 import PostIndexItem from './post_index_item';
+import PostFormNav from './post_form_nav';
 import CreatePostContainer from './create_post_container';
 class PostIndex extends React.Component {
 
@@ -13,7 +14,11 @@ class PostIndex extends React.Component {
     return (
       <div className="post-index-container fade-in">
         <ol>
-            <CreatePostContainer />
+            {/*
+              */}
+              <PostFormNav/>
+              <CreatePostContainer />
+
           {
             this.props.posts.map( post => (
               <PostIndexItem
