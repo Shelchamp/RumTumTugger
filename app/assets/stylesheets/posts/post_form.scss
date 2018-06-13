@@ -115,3 +115,56 @@
   font-size: 36px;
   line-height: 47px;
 }
+
+.title-field .editor-placeholder, .title-field .editor-plaintext{
+  min-height: 42px;
+  word-wrap: break-word;
+  width: 500px;
+}
+
+.editor-plaintext, .editor-placeholder, .editor-richtext{
+  box-sizing: border-box;
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444;
+  background: hsla(0,0%,100%,.01);
+  width: 100%;
+  min-height: 80px;
+  padding: 0;
+  z-index: 2;
+  position: static;
+  cursor: default;
+}
+
+.caption-field .editor-richtext{
+  line-height: 21px;
+  word-wrap: break-word;
+  width: 500px;
+}
+
+.post-form-tag-editor{
+  margin-top: 5px;
+  padding: 5px 20px 10px 15px;
+  overflow: hidden;
+  word-break: break-all;
+  cursor: text;
+}
+
+.post-form-tag-editor .tag-input-wrapper{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  font-size: 13px;
+  margin-bottom: 1px;
+  line-height: 15px;
+  padding: 5px;
+}
+
+.tag-input-wrapper .editor-slot{
+  display: inline-block;
+}
+
+.post-form-tag-editor .tag-input-wrapper .editor-plaintext, .post-form-tag-editor .tag-input-wrapper .editor-placeholder{
+  min-height: 13px;
+}

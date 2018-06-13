@@ -34,32 +34,52 @@ class PostForm extends React.Component {
           <div className='post-container'>
             <div className='post-container-inner post'>
               <div className='post-form-header clearfix'>
-                <div className='post-form-form post-content-text'>
-                  <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
+                  <div className='post-form-form post-content-text'>
                     <div className='title-field'>
                       <div className='editor-wrapper'>
                         <div className='editor-slot'>
                           <div className='editor editor-plaintext'>
+                            <input
+                              className='create-text-post-title editor-placeholder'
+                              type='text'
+                              value={this.state.title}
+                              onChange={this.update('title')}
+                              placeholder='Title'
+                              />
                           </div>
                         </div>
                       </div>
-                      <input
-                        className='create-text-post-title'
-                        type='text'
-                        value={this.state.title}
-                        onChange={this.update('title')}
-                        placeholder='Title'
-                        />
                     </div>
-                    <textarea
-                      className='create-text-post-body'
-                      value={this.state.body}
-                      onChange={this.update('body')}
-                      placeholder='Your text here'
-                      />
-                    <button type='submit'>POST</button>
-                  </form>
-                </div>
+                    <div className='caption-field'>
+                      <div className='editor-slot'>
+                        <div className='editor editor-richtext'>
+                          <textarea
+                            className='create-text-post-body'
+                            value={this.state.body}
+                            onChange={this.update('body')}
+                            placeholder='Your text here'
+                            />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='post-form-footer'>
+                    <div className='post-form-tag-editor'>
+                      <div className='tag-input-wrapper'>
+                        <div className='tagInput'>
+                          <div className='editor-wrapper'>
+                            <div className='editor-slot'>
+                              <div className='editor editor-plaintext'>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <button type='submit'>POST</button>
+              </form>
               </div>
             </div>
           </div>
