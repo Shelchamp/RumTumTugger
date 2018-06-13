@@ -1,0 +1,67 @@
+@import "../variables/*";
+
+.post.new-post {
+    position: relative;
+    min-height: 99px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    clear: both;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.post.new-post .post-buttons{
+  padding: 0 1px 0 7px;
+}
+
+.clearfix{
+  zoom: 1;
+}
+
+.post.new-post .new-post-label{
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 20px;
+  padding: 61px 1px 18px 0;
+  color: #696969;
+  font-size: 15px;
+  opacity: 0.9;
+  font-weight: normal;
+  border: 1px solid black;
+  text-decoration: none;
+  // background: $tumblr-back; //url(/images/post_type_div.png) no-repeat right center;
+}
+
+i{
+  opacity: 1;
+  transform: scale(1) translateY(0px);
+}
+
+.new-post-label i {
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 5px;
+  width: 48px;
+  height: 48px;
+  padding: 0 14px;
+  margin: 0 auto;
+  font-size: 48px;
+  text-align: center;
+  line-height: 62px;
+  transition-property: line-height;
+  transition-duration: 0.08s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.new-post-label-text{
+  display: block;
+  width: 75px;
+  text-align: center;
+}
