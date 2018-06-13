@@ -12,8 +12,11 @@ class PostIndex extends React.Component {
   render(){
     return (
       <div className="post-index-container fade-in">
-        <CreatePostContainer/>
         <ol>
+          {/*
+            <CreatePostContainer />
+            */}
+
           {
             this.props.posts.map( post => (
               <PostIndexItem

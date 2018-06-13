@@ -21,7 +21,7 @@ class SignupForm extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     this.props.signup(this.state)
-      .then(this.props.history.push("/feed"))
+      .then(this.props.history.push("/signup"))
   }
 
   renderErrors(){
@@ -31,7 +31,7 @@ class SignupForm extends React.Component {
           this.props.errors.map((error, i) =>(
             <li
               key={`error-${i}`}
-              className="errors"
+              className="errors fade-in"
               >
               {error}
             </li>

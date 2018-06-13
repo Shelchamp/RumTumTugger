@@ -1,0 +1,117 @@
+@import "../variables/*";
+
+.create-text-post{
+  background-color: $tumblr-back;
+}
+
+.create-text-post-title{
+  background-color: blue;
+}
+
+.create-text-post-body{
+  background-color: blue;
+}
+
+.post-form .post-margin{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 85px;
+}
+
+.post-form{
+  position: relative;
+}
+
+.post-form-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post-form-avatar{
+  position: relative;
+  width: 64px;
+  height: 64px;
+  perspective: 100px;
+}
+
+.post-form-avatar .channel-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 3px;
+}
+
+.post-form-avatar .avatar-container{
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.post-form-avatar .primary-avatar{
+  right: -3px;
+  bottom: -3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.post-form-avatar .avatar-container{
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.post-form .post-container{
+  width: 540px;
+  min-height: 90px;
+}
+
+.post-container {
+  background-color: #fff;
+  color: #444;
+  border-radius: 3px;
+}
+
+.post-container-inner{
+  min-height: 64px;
+}
+
+.post{
+  position: relative;
+  font-size: 14px;
+}
+
+.post-form-header{
+  color: #8f8f8f;
+}
+
+.clearfix{
+  zoom: 1;
+}
+
+.post-form-form{
+  padding: 0 20px;
+  position: relative;
+}
+
+.post-content-text{
+  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.title-field{
+  margin-bottom: 10px;
+}
+
+.editor-slot{
+  background: #fff;
+}
+
+.post .post-content-text .title-field * {
+  font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+}

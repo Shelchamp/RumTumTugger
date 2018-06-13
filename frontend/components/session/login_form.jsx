@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
           this.props.errors.map((error, i) =>(
             <li
               key={`error-${i}`}
-              className="errors"
+              className="errors fade-in"
               >
               {error}
             </li>
