@@ -10,7 +10,7 @@ class PostFormNav extends React.Component {
             <Link to='/feed/textform' className='new-post-label'>
               <i
                 className='icon-post-text'
-                >A</i>
+                ></i>
               <span
                 className='new-post-label-text'>
                 Text

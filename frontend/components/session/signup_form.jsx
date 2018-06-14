@@ -58,20 +58,20 @@ class SignupForm extends React.Component {
             </div>
             <div>
               <input
-                className='input-signup-password'
-                type='text'
-                placeholder='Password'
-                value={this.state.password}
-                onChange={this.update('password')}
-                />
-            </div>
-            <div>
-              <input
                 className='input-signup-username'
                 type='text'
                 placeholder='Username'
                 value={this.state.username}
                 onChange={this.update('username')}
+                />
+            </div>
+            <div>
+              <input
+                className='input-signup-password'
+                type='password'
+                placeholder='Password'
+                value={this.state.password}
+                onChange={this.update('password')}
                 />
             </div>
             {/* ERRORS */}

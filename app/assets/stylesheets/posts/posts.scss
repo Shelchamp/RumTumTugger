@@ -3,6 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "../variables/*";
 
+
+
+
+// a {
+//   color:blue;
+//   /* First we need to help some browsers along for this to work.
+//      Just because a vendor prefix is there, doesn't mean it will
+//      work in a browser made by that vendor either, it's just for
+//      future-proofing purposes I guess. */
+//   -o-transition:color .2s ease-out, background 2s ease-in;
+//   -ms-transition:color .2s ease-out, background 2s ease-in;
+//   -moz-transition:color .2s ease-out, background 2s ease-in;
+//   -webkit-transition:color .2s ease-out, background 2s ease-in;
+//   /* ...and now for the proper property */
+//   transition:color .2s ease-out, background 2s ease-in;
+// }
+// a:hover { color:red; background:$tumblr-back; }
+
+
+
 .post-index-item{
   // background-color: blue;
 }
@@ -16,7 +36,7 @@
   border-radius: 3px;
   align-items: center;
   margin: auto;
-  margin-top: 22px;
+  margin-top: 16px;
 }
 
 
