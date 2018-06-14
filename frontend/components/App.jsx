@@ -8,6 +8,7 @@ import PostIndexContainer from './posts/post_index_container';
 import NavBarContainer from './navbar/navbar_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import CreatePostContainer from './posts/create_post_container';
+import CreateImagePostContainer from './posts/create_image_post_container';
 import PostFormNav from './posts/post_form_nav';
 const App = () => (
   <div className="fullscreen">
@@ -16,6 +17,7 @@ const App = () => (
     <Route path="/" component={GreetingContainer}/>
     <Route path="/feed" component={PostFormNav}/>
     <Route path="/feed/textform" component={CreatePostContainer}/>
+    <Route path="/feed/imageform" component={CreateImagePostContainer}/>
     <Switch>
       <AuthRoute path='/signup' component={SignupFormContainer}/>
       <AuthRoute path='/login' component={LoginFormContainer}/>

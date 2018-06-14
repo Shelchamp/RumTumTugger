@@ -16,7 +16,7 @@ class PostFormNav extends React.Component {
                 Text
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-photo'>
+            <Link to='/feed/imageform' className='new-post-label' id='new-post-label-photo'>
               <i className='icon-post-photo'>
 
               </i>
