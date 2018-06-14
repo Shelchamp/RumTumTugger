@@ -13,6 +13,9 @@ const PostIndexItem = props => (
         <div className="post-content">
           <div className="post-container">
             <div className="post-title">{props.post.title}</div>
+            <div>
+              <img src={props.post.image_url} />
+            </div>
             <div className="post-body">{props.post.body}</div>
           </div>
         </div>

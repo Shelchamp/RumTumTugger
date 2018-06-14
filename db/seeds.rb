@@ -8,6 +8,8 @@
 
 User.destroy_all
 
+#CREATE USERS FIRST
+
 josuke = {
   username: 'Josuke',
   email: 'Josuke@jojo.com',
@@ -27,9 +29,55 @@ kira = {
 user1 = User.create(josuke)
 user2 = User.create(kira)
 
+#CREATE USERS FIRST
+
+test_post1 = {
+  post_type: 'image',
+  title: '',
+  body: 'ORAORAORAORAORAORA',
+  image_url: "https://i.imgur.com/ZayJj8X.gif",
+  user_id: user1.id
+}
+#
+test_post2 = {
+  post_type: 'image',
+  title: '',
+  body: 'Meow',
+  image_url: 'https://i.imgur.com/AQo6tuw.gif',
+  user_id: user2.id
+
+}
+
+test_post3 = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/kfd4lI6.png',
+  user_id: user1.id
+}
+#
+test_post4 = {
+  post_type: 'image',
+  title: '',
+  body: 'Higher! Higher!',
+  image_url: 'https://i.imgur.com/L3hcrzC.gif',
+  user_id: user2.id
+}
+#
+test_post5 = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/Nf6wb7u.gif',
+  user_id: user2.id
+}
+
+
 Post.destroy_all
 
-10.times { Post.create(
+post4 = Post.create(test_post4)
+
+2.times { Post.create(
   post_type: 'text',
   title: Faker::RuPaul.queen,
   body: Faker::RuPaul.quote,
@@ -37,49 +85,27 @@ Post.destroy_all
   user_id: [user1.id, user2.id].sample
   )}
 
-# test_post1 = {
-#   post_type: 'text',
-#   title: 'Look at my horse, my horse is amazing.',
-#   body: 'Give it a lick, it tastes just like raisins.',
-#   image_url: '',
-#   user_id: user1.id
-# }
+  post5 = Post.create(test_post5)
+
+2.times { Post.create(
+  post_type: 'text',
+  title: Faker::LeagueOfLegends.quote,
+  body: Faker::LeagueOfLegends.champion,
+  image_url: '',
+  user_id: [user1.id, user2.id].sample
+  )}
+
+  post1 = Post.create(test_post1)
+  post2 = Post.create(test_post2)
+
+2.times { Post.create(
+  post_type: 'text',
+  title: Faker::OnePiece.quote,
+  body: Faker::OnePiece.character,
+  image_url: '',
+  user_id: [user1.id, user2.id].sample
+  )}
 #
-# test_post2 = {
-#   post_type: 'text',
-#   title: 'Knees weak',
-#   body: 'Arms are heavy',
-#   image_url: '',
-#   user_id: user1.id
+
 #
-# }
-#
-# test_post3 = {
-#   post_type: 'text',
-#   title: 'Vomit on your sweater already',
-#   body: 'Mom\'s spaghetti',
-#   image_url: '',
-#   user_id: user1.id
-# }
-#
-# test_post4 = {
-#   post_type: 'text',
-#   title: 'Never gonna give you up',
-#   body: 'Never gonna let you down',
-#   image_url: '',
-#   user_id: user2.id
-# }
-#
-# test_post5 = {
-#   post_type: 'text',
-#   title: 'Never gonna turn around',
-#   body: 'And desert you',
-#   image_url: '',
-#   user_id: user2.id
-# }
-#
-# post1 = Post.create(test_post1)
-# post2 = Post.create(test_post2)
-# post3 = Post.create(test_post3)
-# post4 = Post.create(test_post4)
-# post5 = Post.create(test_post5)
+post3 = Post.create(test_post3)

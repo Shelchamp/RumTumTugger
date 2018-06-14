@@ -43,10 +43,12 @@ i{
 }
 
 .new-post-label i {
+  // background-color: blue;
+  box-sizing: content-box;
   position: absolute;
   text-align: center;
   top: 5px;
-  left: 5px;
+  left: -1px;
   width: 48px;
   height: 48px;
   padding: 0 14px;
