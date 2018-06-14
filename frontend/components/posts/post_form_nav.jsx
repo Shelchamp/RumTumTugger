@@ -61,7 +61,7 @@ class PostFormNav extends React.Component {
                 Audio
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-video'>
+            <Link to='/feed/videoform' className='new-post-label' id='new-post-label-video'>
               <i className='icon-post-video'>
 
               </i>

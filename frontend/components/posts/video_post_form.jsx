@@ -1,7 +1,7 @@
 import React from 'react';
 import {withRouter, Link} from 'react-router-dom';
 
-class ImagePostForm extends React.Component {
+class VideoPostForm extends React.Component {
   constructor(props){
     super(props)
     this.state = this.props.post
@@ -46,9 +46,9 @@ class ImagePostForm extends React.Component {
                               type='text'
                               value={this.state.image_url}
                               onChange={this.update('image_url')}
-                              placeholder='Paste a URL'
+                              placeholder='Paste a youtube embed URL'
                               />
-                              
+
                           </div>
                         </div>
                       </div>
@@ -110,4 +110,4 @@ class ImagePostForm extends React.Component {
 
 }
 
-export default withRouter(ImagePostForm);
+export default withRouter(VideoPostForm);
