@@ -1,17 +1,53 @@
 import React from 'react';
 import {withRouter, Link} from 'react-router-dom';
+import Dropzone from 'react-dropzone';
+import request from 'superagent';
+import merge from 'lodash/merge';
+
+const CLOUDINARY_UPLOAD_PRESET = 'RUM_TUM_CLOUD';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/shelchamp/image/upload';
+let cloudinary = {
+  uploadedFileCloudinaryUrl: ''
+};
 
 class ImagePostForm extends React.Component {
   constructor(props){
     super(props)
-    this.state = this.props.post
+    this.state = merge({}, this.props.post, cloudinary)
     this.handleSubmit = this.handleSubmit.bind(this);
-    // debugger
+
+  }
+
+  onImageDrop(files) {
+    // this.setState({
+    //   uploadedFile: files[0]
+    // })
+    this.handleImageUpload(files[0]);
+  }
+
+  handleImageUpload(file) {
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
+
+    upload.end((err, response) => {
+      if (err) {
+        console.error(err);
+      }
+
+      if (response.body.secure_url !== ''){
+        this.setState({
+          uploadedFileCloudinaryUrl: response.body.secure_url,
+          image_url: response.body.secure_url
+        });
+      }
+    })
   }
 
   update(field){
     return (e) =>{
       this.setState({[field]: e.target.value})
+
     }
   }
 
@@ -48,11 +84,33 @@ class ImagePostForm extends React.Component {
                               onChange={this.update('image_url')}
                               placeholder='Paste a URL'
                               />
-                              
+                            <div>
+                              <h2 className='or'>-or-</h2>
+                            </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
+                    {/* CLOUDINARY IMAGE */}
+                    <div id='drop'>
+                      <Dropzone
+                        className='drop-box heat'
+                        multiple={false}
+                        accept="image/*"
+                        onDrop={this.onImageDrop.bind(this)}>
+                        <p>Drop an image or click to select a file to upload.</p>
+                      </Dropzone>
+                      <div>
+                        <div>
+                          {(this.state.uploadedFileCloudinaryUrl === '' || this.state.image_url === '') ? null :
+                            <div className="drop-prev">
+                              <img src={this.state.uploadedFileCloudinaryUrl} />
+                          </div>}
+                        </div>
+                      </div>
+                    </div>
+                    {/* CLOUDINARY IMAGE */}
                     <div className='caption-field'>
                       <div className='editor-slot'>
                         <div className='editor editor-richtext'>

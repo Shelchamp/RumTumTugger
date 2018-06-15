@@ -258,67 +258,27 @@
   padding-bottom: 12px;
 }
 
-// .post-form-controls .controls-container .post-form-save-button{
-//   display: inline-block;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-//   box-sizing: border-box;
-//   cursor: pointer;
-//   border-width: 1px;
-//   border-style: solid;
-//   border-radius: 2px;
-//   font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
-//   font-size: 14px;
-//   font-weight: 700;
-//   line-height: 1.4;
-//   text-decoration: none;
-//   background-color: #529ecc;
-//   color: #fff;
-//   display: -ms-inline-flexbox;
-//   display: inline-flex;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   -ms-flex-pack: justify;
-//   justify-content: space-between;
-//   padding: 0;
-//   border: 0;
-//   white-space: nowrap;
-// }
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area.disabled,
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area.disabled.active,
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area[disabled],
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area[disabled]:active,
-// .post-form--controls .controls-container .post-form--save-button .split-button .dropdown-area.disabled,
-// .post-form--controls .controls-container .post-form--save-button .split-button .dropdown-area.disabled.active,
-// .post-form--controls .controls-container .post-form--save-button .split-button .dropdown-area[disabled],
-// .post-form--controls .controls-container .post-form--save-button .split-button .dropdown-area[disabled]:active {
-//     border-color: #529ecc;
-//     background-color: #529ecc;
-//     color: hsla(0,0%,100%,.5);
-//     cursor: default;
-// }
+.or{
+  text-align: center;
+  width: 200px;
+  margin: auto;
+}
 
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area {
-//     border-radius: 2px 0 0 2px;
-//     padding-left: 10px;
-//     padding-right: 10px;
-// }
+.drop-box{
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  height: 75px;
+  border-width: 2px;
+  border-color: rgb(102, 102, 102);
+  border-style: dashed;
+  border-radius: 5px;
+  font-family: $hel-norm;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-// .post-form--controls .controls-container .post-form--save-button .split-button .button-area,
-// .post-form--controls .controls-container .post-form--save-button .split-button .dropdown-area {
-//     border-color: #529ecc;
-//     background-color: #529ecc;
-//     color: #fff;
-//     padding-top: 5px;
-//     padding-bottom: 5px;
-//   }
-
-// .pop-menu .button-area,
-// .pop-menu .tx-button,
-// .post-form .button-area,
-// .post-form .tx-button {
-//     font-size: 13px;
-//     font-weight: 700;
-// }
+.create-text-post-body, .create-text-post-title{
+  cursor: text;
+}

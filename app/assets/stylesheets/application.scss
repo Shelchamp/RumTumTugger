@@ -76,23 +76,20 @@ li, ol, ul {
 }
 
 
-// .Aligner {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-//
-// .Aligner-item {
-//   max-width: 50%;
-// }
-//
-// .Aligner-item--top {
-//   align-self: flex-start;
-// }
-//
-// .Aligner-item--bottom {
-//   align-self: flex-end;
-// }
+.heat {
+
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now for the proper property */
+  transition:color .2s ease-out, background 2s ease-in;
+}
+.heat:hover { background: rgb(187, 217, 158); }
 
 
 
