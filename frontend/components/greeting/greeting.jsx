@@ -33,7 +33,7 @@ class Greeting extends React.Component {
 
     const loggedOut = () => (
       <div>
-        <div className='button-div'>
+        <div className='button-div demo-div'>
           <button
             className='demo-login'
             onClick={this.handleLogin}

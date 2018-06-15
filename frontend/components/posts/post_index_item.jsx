@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PostIndexItem = props => {
-  debugger
   {/*
     let user_id = props.post.user_id;
     let username = props.users.users[user_id].username;
@@ -41,7 +40,7 @@ const PostIndexItem = props => {
       </div>
       <div className="post-wrapper">
         <div className="post-header">
-          <div className="post-info"></div>
+          <div className="post-info">{props.author.username}</div>
         </div>
         <div className="post-content">
           <div className="post-container">
