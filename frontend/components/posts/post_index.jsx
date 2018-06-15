@@ -8,10 +8,12 @@ class PostIndex extends React.Component {
   componentDidMount(){
     this.props.fetchPosts();
     this.props.fetchUsers();
+    // debugger
   }
 
 
   render(){
+    // debugger
     return (
       <div className="post-index-container fade-in">
         <ol>
@@ -22,6 +24,7 @@ class PostIndex extends React.Component {
               <PostIndexItem
                 post={post}
                 key={post.id}
+                // users={this.props.users[post.user_id]}
 
               />
             ))
