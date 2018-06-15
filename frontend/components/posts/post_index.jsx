@@ -7,8 +7,8 @@ class PostIndex extends React.Component {
 
   componentDidMount(){
     this.props.fetchPosts();
-    this.props.fetchUsers();
-    // debugger
+    // this.props.fetchUsers();
+    debugger
   }
 
 
@@ -24,7 +24,7 @@ class PostIndex extends React.Component {
               <PostIndexItem
                 post={post}
                 key={post.id}
-                users={this.props.users}
+
 
               />
             ))

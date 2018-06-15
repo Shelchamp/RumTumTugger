@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 class PostFormNav extends React.Component {
 
+  
+
   render(){
     return (
       <li className='new-post-buttons-container'>
@@ -25,7 +27,7 @@ class PostFormNav extends React.Component {
                 Photo
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-quote'>
+            <Link to='/feed/quoteform' className='new-post-label' id='new-post-label-quote'>
               <i className='icon-post-quote'>
                 <img src="https://i.imgur.com/69rvy98.png"/>
               </i>
@@ -34,7 +36,7 @@ class PostFormNav extends React.Component {
                 Quote
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-link'>
+            <Link to='/feed/linkform' className='new-post-label' id='new-post-label-link'>
               <i className='icon-post-link'>
                 <img src="https://i.imgur.com/V2UN4f9.png"/>
               </i>
@@ -43,7 +45,7 @@ class PostFormNav extends React.Component {
                 Link
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-chat'>
+            <Link to='/feed/chatform' className='new-post-label' id='new-post-label-chat'>
               <i className='icon-post-chat'>
                 <img src="https://i.imgur.com/MWPKr7s.png"/>
               </i>
@@ -52,7 +54,7 @@ class PostFormNav extends React.Component {
                 Chat
               </span>
             </Link>
-            <Link to='/' className='new-post-label' id='new-post-label-audio'>
+            <Link to='/feed/audioform' className='new-post-label' id='new-post-label-audio'>
               <i className='icon-post-audio'>
                 <img src="https://i.imgur.com/kaNlsxF.png" />
               </i>
