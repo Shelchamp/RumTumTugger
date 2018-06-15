@@ -51,6 +51,7 @@
   color: #1b0202;
   // background: url("https://i.imgur.com/NG05NYX.png") 22px 11px no-repeat;
   background-size: 19px 33px;
+  margin-right: 20px;
 }
 
 
@@ -111,20 +112,11 @@
   height: 32px;
   padding-left: 8px;
 }
-// display: inline-block;
-// -webkit-user-select: none;
-// -moz-user-select: none;
-// -ms-user-select: none;
-// user-select: none;
-// box-sizing: border-box;
-// cursor: pointer;
-// padding: 5px 7px;
-// border-radius: 2px;
-// font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
-// font-size: 14px;
-// font-weight: 700;
-// line-height: 1.4;
-// text-decoration: none;
-// border: 1px solid #529ecc;
-// background-color: #529ecc;
-// color: #fff;
+
+.black-home{
+  color: black;
+}
+
+.logo .png-logo.white-home{
+  color: white;
+}

@@ -63,11 +63,28 @@ class NavBar extends React.Component {
       button = logoutButton()
     }
 
+    const whiteHome = () =>(
+      <div className="png-logo white-home">rtt</div>
+    )
+
+    const blackHome = () =>(
+      <div className="png-logo black-home">rtt</div>
+    )
+
+    let homeButton;
+    if(this.props.location.pathname === '/login'){
+      homeButton = blackHome()
+    } else if (this.props.location.pathname === '/signup'){
+      homeButton = blackHome()
+    }else {
+      homeButton = whiteHome()
+    }
+
     return (
       <div className='top-nav'>
         <div className="navbar">
           <h1 className="logo">
-            <Link to="/feed"><div className="png-logo">rtt</div></Link>
+            <Link to="/feed">{homeButton}</Link>
             <div className="logo-img"></div>
           </h1>
 
