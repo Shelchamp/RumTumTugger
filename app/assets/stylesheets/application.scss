@@ -21,6 +21,10 @@
 // Components
 @import "variables/*";
 
+.rtt{
+  background-image: none;
+}
+
 html {
   background-color: $tumblr-back;
   // background: url('https://i.imgur.com/qk71sMS.gif') no-repeat center center fixed;
@@ -73,6 +77,7 @@ li, ol, ul {
   -o-background-size:cover;
   background-size: cover;
   background-position: 50% 50%;
+
 }
 
 

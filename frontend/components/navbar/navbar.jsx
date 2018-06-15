@@ -135,7 +135,8 @@ class NavBar extends React.Component {
     }
 
     return (
-      navBar
+
+        navBar
 
     )
   }
