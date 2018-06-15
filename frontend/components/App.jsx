@@ -19,8 +19,8 @@ const App = () => (
     <Route path="/feed" component={PostFormNav}/>
     <Route path="/feed/textform" component={CreatePostContainer}/>
     <Route path="/feed/imageform" component={CreateImagePostContainer}/>
+    <Route path="/feed/videoform" component={CreateVideoPostContainer}/>
     {/*
-      <Route path="/feed/videoform" component={CreateVideoPostContainer}/>
       */}
     <Switch>
       <AuthRoute path='/signup' component={SignupFormContainer}/>

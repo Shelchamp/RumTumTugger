@@ -48,10 +48,12 @@ class VideoPostForm extends React.Component {
                               onChange={this.update('image_url')}
                               placeholder='Paste a youtube embed URL'
                               />
-
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <div>
+                      <h1 className='example-vid'>(ex: https://www.youtube.com/embed/dQw4w9WgXcQ )</h1>
                     </div>
                     <div className='caption-field'>
                       <div className='editor-slot'>

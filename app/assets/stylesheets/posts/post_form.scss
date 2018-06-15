@@ -282,3 +282,12 @@
 .create-text-post-body, .create-text-post-title{
   cursor: text;
 }
+
+.example-vid{
+  margin: auto;
+  font-family: $hel-light;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $light-font;
+}
