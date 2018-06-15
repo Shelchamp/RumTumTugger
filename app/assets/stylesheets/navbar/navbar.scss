@@ -9,8 +9,11 @@
     padding: 1px 10px 2px 39px;
     margin-top: 10px;
     font-family: $hel-norm;
-    // box-sizing: border-box;
     background-color: #2f3d50;
+}
+
+.search-field[type=text].outside {
+    background-color: transparent;
 }
 
 /* When the input field gets focus, change its width to 100% */
@@ -27,7 +30,11 @@
   z-index: 90;
   box-shadow: 0 0 0 1px hsla(0,0%,100%,.13);
   transform: translateZ(0) translateY(0);
+}
 
+.navbar.outside{
+  border-bottom: none;
+  box-shadow: none;
 }
 
 

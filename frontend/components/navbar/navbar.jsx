@@ -17,6 +17,7 @@ class NavBar extends React.Component {
 
 
   render() {
+
     //show signup
     const currentlyOnLogin = () => (
       <div
@@ -63,6 +64,9 @@ class NavBar extends React.Component {
       button = logoutButton()
     }
 
+
+    let homeButton;
+    {/* CONDTTIONAL HOME STYLE */}
     const whiteHome = () =>(
       <div className="png-logo white-home">rtt</div>
     )
@@ -71,16 +75,30 @@ class NavBar extends React.Component {
       <div className="png-logo black-home">rtt</div>
     )
 
-    let homeButton;
-    if(this.props.location.pathname === '/login'){
-      homeButton = blackHome()
-    } else if (this.props.location.pathname === '/signup'){
-      homeButton = blackHome()
-    }else {
-      homeButton = whiteHome()
-    }
 
-    return (
+    let navBar;
+    {/* CONDTTIONAL NAV STYLE */}
+    const outsideNav = () =>(
+      <div className='top-nav'>
+        <div className="navbar outside">
+          <h1 className="logo">
+            <Link to="/feed">{homeButton}</Link>
+            <div className="logo-img"></div>
+          </h1>
+
+          <input
+            className='search-field outside'
+            type="text"
+            placeholder="Search RumTumTugger"
+            name="q"
+            />
+
+          {button}
+        </div>
+      </div>
+    )
+
+    const insideNav = () =>(
       <div className='top-nav'>
         <div className="navbar">
           <h1 className="logo">
@@ -98,6 +116,27 @@ class NavBar extends React.Component {
           {button}
         </div>
       </div>
+    )
+
+
+    if(this.props.location.pathname === '/login'){
+      homeButton = blackHome()
+      navBar = outsideNav()
+      button = currentlyOnLogin()
+
+    } else if (this.props.location.pathname === '/signup'){
+      homeButton = blackHome()
+      navBar = outsideNav()
+      button = currentlyOnSignup()
+    }else {
+      homeButton = whiteHome()
+      navBar = insideNav()
+      button = logoutButton()
+    }
+
+    return (
+      navBar
+
     )
   }
 
