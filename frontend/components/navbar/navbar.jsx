@@ -135,8 +135,9 @@ class NavBar extends React.Component {
     }
 
     return (
-
-        navBar
+      <div className='div-fix'>
+        {navBar}
+      </div>
 
     )
   }

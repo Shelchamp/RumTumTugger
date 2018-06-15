@@ -40,7 +40,7 @@ const PostIndexItem = props => {
       </div>
       <div className="post-wrapper">
         <div className="post-header">
-          <div className="post-info">{props.author.username}</div>
+          <div className="post-author">{props.author.username}</div>
         </div>
         <div className="post-content">
           <div className="post-container">

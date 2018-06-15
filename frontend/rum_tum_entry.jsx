@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { signup, login, logout } from './util/session_api_util';
 import configureStore from './store/store';
 import Root from './components/root';
-import { login, signup, logout } from './actions/session_actions'
-import { fetchPosts, createPost } from './actions/post_actions';
-import { fetchUsers } from './actions/user_actions';
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
@@ -28,21 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }
 
   //TESTING
-  window.user = {'username': 'hi', 'password': 'there'}
-  window.post = {
-    'post_type': 'text',
-    'title': 'TEST TITLE',
-    'body': 'TEST BODY',
-    'image_url': '',
-    'user_id': 34
-  }
-  window.login = login
-  window.signup = signup
-  window.logout = logout
-  window.store = store
-  window.fetchUsers = fetchUsers
-  window.fetchPosts = fetchPosts
-  window.createPost = createPost
+
   //TESTING
 
   ReactDOM.render(<Root store={store}/>, root);

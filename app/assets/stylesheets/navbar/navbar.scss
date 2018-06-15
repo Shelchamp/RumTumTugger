@@ -30,11 +30,13 @@
   z-index: 90;
   box-shadow: 0 0 0 1px hsla(0,0%,100%,.13);
   transform: translateZ(0) translateY(0);
+  background-color: $tumblr-back;
 }
 
 .navbar.outside{
   border-bottom: none;
   box-shadow: none;
+  background-color: transparent;
 }
 
 
@@ -127,3 +129,8 @@
 .logo .png-logo.white-home{
   color: white;
 }
+
+// .div-fix{
+//   position: fixed;
+//   display: block;
+// }

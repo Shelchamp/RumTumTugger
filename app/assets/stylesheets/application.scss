@@ -28,18 +28,24 @@
 html {
   background-color: $tumblr-back;
   // background: url('https://i.imgur.com/qk71sMS.gif') no-repeat center center fixed;
+  background: url('https://i.imgur.com/Nj6ik63.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 300px;
   min-width: 300px;
+
 }
 
 li, ol, ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+ol {
+  margin-bottom: 25px;
 }
 
 #root{
@@ -95,6 +101,17 @@ li, ol, ul {
   transition:color .2s ease-out, background 2s ease-in;
 }
 .heat:hover { background: rgb(187, 217, 158); }
+
+.cold {
+
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now for the proper property */
+  transition:color 3s ease-out, background 4s ease-in;
+}
+.cold:hover { background: rgb(221, 118, 79); }
 
 
 
