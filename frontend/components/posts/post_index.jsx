@@ -24,7 +24,7 @@ class PostIndex extends React.Component {
               <PostIndexItem
                 post={post}
                 key={post.id}
-                // users={this.props.users[post.user_id]}
+                users={this.props.users}
 
               />
             ))

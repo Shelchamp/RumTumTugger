@@ -1,6 +1,8 @@
 import React from 'react';
 
 const PostIndexItem = props => {
+  let user_id = props.post.user_id;
+  let username = props.users.users[user_id].username;
   // debugger
   {/*
     LOGIC TO CONDITIONALLY RENDER A PICTURE OR VIDEO
@@ -39,7 +41,7 @@ const PostIndexItem = props => {
       </div>
       <div className="post-wrapper">
         <div className="post-header">
-          <div className="post-info">{props.users}</div>
+          <div className="post-info">{username}</div>
         </div>
         <div className="post-content">
           <div className="post-container">
