@@ -17,3 +17,10 @@ Share a painting you've been working on for months, a thought that has been weig
 Choose a post form from the nav bar. Currently supported post types are text, photos, and youtube links.
 
 **Photos** can be posted through URLs, uploaded from your finder, or simply dropped onto the app.
+
+## Project Direction
+
+* Reblogs and shares
+* Liking posts
+* Taggings posts and searching posts by tag
+* Following users
