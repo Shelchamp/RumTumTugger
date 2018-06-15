@@ -104,6 +104,7 @@
 .post.post-full .post-body{
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 18px;
 }
 
 .post-full .post-body{
@@ -133,6 +134,8 @@
 .post .post-tags-inner{
   float: left;
   position: relative;
+  font-family: $hel-norm;
+  font-size: 13px;
 }
 
 .post-footer{
@@ -165,6 +168,8 @@
 
 .post-full .post-notes-inner{
   padding-right: 10px;
+  font-family: $hel-norm;
+  font-size: 13px;
 }
 
 .post-controls{

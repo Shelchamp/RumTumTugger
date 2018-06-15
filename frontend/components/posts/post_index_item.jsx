@@ -53,12 +53,12 @@ const PostIndexItem = props => {
         </div>
         <div className="post-tags">
           <div className="post-tags-inner">
-            TAGS
+            tags
           </div>
         </div>
         <div className="post-footer">
           <div className="post-notes">
-            <div className="post-notes-inner">NOTES</div>
+            <div className="post-notes-inner">notes</div>
           </div>
           <div className="post-controls">
             <div className="post-controls-inner">
