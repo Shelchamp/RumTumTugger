@@ -9,7 +9,7 @@ class PostFormNav extends React.Component {
           <nav className='post-buttons clearfix'>
             <Link to='/feed/textform' className='new-post-label' id='new-post-label-text'>
               <i className='icon-post-text'>
-
+                <img src="https://i.imgur.com/jbKwECr.png"/>
               </i>
               <span
                 className='new-post-label-text'>
@@ -18,7 +18,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/feed/imageform' className='new-post-label' id='new-post-label-photo'>
               <i className='icon-post-photo'>
-
+                <img src="https://i.imgur.com/B1h1t9v.png"/>
               </i>
               <span
                 className='new-post-label-photo'>
@@ -27,7 +27,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/' className='new-post-label' id='new-post-label-quote'>
               <i className='icon-post-quote'>
-
+                <img src="https://i.imgur.com/69rvy98.png"/>
               </i>
               <span
                 className='new-post-label-quote'>
@@ -36,7 +36,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/' className='new-post-label' id='new-post-label-link'>
               <i className='icon-post-link'>
-
+                <img src="https://i.imgur.com/V2UN4f9.png"/>
               </i>
               <span
                 className='new-post-label-link'>
@@ -45,7 +45,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/' className='new-post-label' id='new-post-label-chat'>
               <i className='icon-post-chat'>
-
+                <img src="https://i.imgur.com/MWPKr7s.png"/>
               </i>
               <span
                 className='new-post-label-chat'>
@@ -54,7 +54,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/' className='new-post-label' id='new-post-label-audio'>
               <i className='icon-post-audio'>
-
+                <img src="https://i.imgur.com/kaNlsxF.png" />
               </i>
               <span
                 className='new-post-label-audio'>
@@ -63,7 +63,7 @@ class PostFormNav extends React.Component {
             </Link>
             <Link to='/feed/videoform' className='new-post-label' id='new-post-label-video'>
               <i className='icon-post-video'>
-
+                <img src="https://i.imgur.com/pMVNlLX.png" />
               </i>
               <span
                 className='new-post-label-video'>

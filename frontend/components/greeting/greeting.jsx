@@ -28,8 +28,8 @@ class Greeting extends React.Component {
   render () {
     const loggedIn = () => (
       <div >
-        <h2 className="welcome">Welcome, {this.props.currentUser.username}.</h2>
-        <h3 className="welcome">Shine on, you Crazy Diamond.</h3>
+        <h3 className="welcome">Welcome to Rum Tum Tugger</h3>
+
         {/*<div className='button-div'>
           <button
             className='demo-login'

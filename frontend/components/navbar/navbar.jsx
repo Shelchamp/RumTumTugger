@@ -64,11 +64,12 @@ class NavBar extends React.Component {
     }
 
     return (
-      <div className="navbar">
-        <h1 className="logo">
-          <Link to="/feed"><div className="png-logo">rtt</div></Link>
-          <div className="logo-img"></div>
-        </h1>
+      <div className='top-nav'>
+        <div className="navbar">
+          <h1 className="logo">
+            <Link to="/feed"><div className="png-logo">rtt</div></Link>
+            <div className="logo-img"></div>
+          </h1>
 
           <input
             className='search-field'
@@ -77,7 +78,8 @@ class NavBar extends React.Component {
             name="q"
             />
 
-        {button}
+          {button}
+        </div>
       </div>
     )
   }

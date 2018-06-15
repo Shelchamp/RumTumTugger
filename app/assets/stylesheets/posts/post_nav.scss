@@ -72,3 +72,14 @@ i{
 .new-post-buttons{
   margin: auto;
 }
+
+[class*="new-post-label"]{
+  font-family: $hel-norm;
+}
+//
+// .icon-post-text{
+//   display: flex;
+//   justify-content: center;
+//   background-position: -834px -6px;
+//   background-color: black;
+// }
