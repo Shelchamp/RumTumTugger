@@ -14,6 +14,7 @@ class Greeting extends React.Component {
     this.props
       .login({ email: "Josuke@jojo.com", password: "CrazyDiamond" })
       .then(() => this.props.history.push("/feed"));
+    setTimeout();
   }
 
   // DEMON LOGIN BUTTON
@@ -21,7 +22,9 @@ class Greeting extends React.Component {
   render() {
     const loggedIn = () => (
       <div>
-        <h3 className="welcome">Welcome to Rum Tum Tugger</h3>
+        <h3 id="hideMe" className="welcome">
+          Welcome to Rum Tum Tugger
+        </h3>
       </div>
     );
 
