@@ -17,14 +17,12 @@ class Greeting extends React.Component {
     setTimeout();
   }
 
-  // DEMON LOGIN BUTTON
+  // DEMO LOGIN BUTTON
 
   render() {
     const loggedIn = () => (
       <div>
-        <h3 id="hideMe" className="welcome">
-          Welcome to Rum Tum Tugger
-        </h3>
+        <h3 className="welcome">Welcome to RumTumTugger</h3>
       </div>
     );
 

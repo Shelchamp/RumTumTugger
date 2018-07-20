@@ -1,6 +1,6 @@
 @import "../variables/*";
 
-.input-login-email{
+.input-login-email {
   height: 44px;
   width: 298px;
   background-color: #ffffff;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.input-login-password{
+.input-login-password {
   height: 40px;
   width: 298px;
   background-color: #ffffff;
@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-.next{
+.next {
   width: 298px;
   height: 43px;
   font-weight: 525;
@@ -36,17 +36,17 @@
 //   color: $place-holder;
 // }
 
-.bg-login{
-  background-repeat:no-repeat;
+.bg-login {
+  background-repeat: no-repeat;
 
-  background-position:center;
+  background-position: center;
   min-height: 40vh;
-  background-image: url('https://i.imgur.com/rdF5eT6.gif')
+  background-image: url("https://i.imgur.com/h22Z7kg.gif");
 }
 
 // Aligner
 
-.Aligner{
+.Aligner {
   display: flex;
   align-items: center;
   justify-content: center;
