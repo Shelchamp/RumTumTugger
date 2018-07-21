@@ -2,6 +2,8 @@
 
 [Rum Tum Tugger Live](https://rumtumtugger.herokuapp.com/#/login)
 
+![RumTumTugger](https://i.imgur.com/WokvUAQ.png)
+
 ## About
 
 Rum Tum Tugger is a full stack application modeled on Tumblr, preserving its layout and cozy ambiance.
@@ -13,6 +15,9 @@ Share a painting you've been working on for months, a thought that has been weig
 
 - Creating a post
 - User Authenticaion
+
+![RumTumTugger](https://i.imgur.com/POJ8DTP.gif)
+
 - Project direction
 
 ### Creating a post
