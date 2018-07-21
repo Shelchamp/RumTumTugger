@@ -7,13 +7,16 @@ class Greeting extends React.Component {
     // debugger
     this.handleLogin = this.handleLogin.bind(this);
     // this.handleLogout = this.handleLogout.bind(this);
+    this.users = [
+      { email: "Josuke@jojo.com", password: "CrazyDiamond" },
+      { email: "Kira@jojo.com", password: "KillerQueen" }
+    ];
   }
 
   handleLogin(e) {
     e.preventDefault();
-    this.props
-      .login({ email: "Josuke@jojo.com", password: "CrazyDiamond" })
-      .then(() => this.props.history.push("/feed"));
+    const user = this.users[Math.floor(Math.random() * 2)];
+    this.props.login(user).then(() => this.props.history.push("/feed"));
     setTimeout();
   }
 
