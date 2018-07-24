@@ -16,7 +16,7 @@ Share a painting you've been working on for months, a thought that has been weig
 - Creating a post
 - User Authenticaion
 
-![RumTumTugger](https://i.imgur.com/POJ8DTP.gif)
+![RumTumTugger](https://i.imgur.com/fBW8nfO.gif)
 
 - Project direction
 
