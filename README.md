@@ -16,9 +16,11 @@ Share a painting you've been working on for months, a thought that has been weig
 - Creating a post
 - User Authenticaion
 
-![RumTumTugger](https://i.imgur.com/fBW8nfO.gif)
+### User Authentication
 
-- Project direction
+Frontend to backend authentication with bootstrap login, Rails, and BCrypt.
+
+![RumTumTugger](https://i.imgur.com/fBW8nfO.gif)
 
 ### Creating a post
 
@@ -26,8 +28,11 @@ Choose a post form from the nav bar. Currently supported post types are text, ph
 
 **Photos** can be posted through URLs, uploaded from your finder, or simply dropped onto the app.
 
+![RumTumTugger](https://i.imgur.com/vF5qGCt.png)
+
 ## Project Direction
 
+- Search posts by tag
 - Reblogs and shares
 - Liking posts
 - Taggings posts and searching posts by tag
