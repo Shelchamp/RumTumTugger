@@ -25,13 +25,47 @@ class Greeting extends React.Component {
   render() {
     const loggedIn = () => (
       <div>
-        <h3 className="welcome">Welcome to RumTumTugger</h3>
+        <h3 className="welcome">
+          <a href="https://github.com/Shelchamp/RumTumTugger" target="_blank">
+            <img
+              className="github"
+              src="https://i.imgur.com/JWA2kGT.png"
+              alt="https://github.com/Shelchamp/RumTumTugger"
+            />
+          </a>
+          Welcome to RumTumTugger{" "}
+          <a href="https://www.linkedin.com/in/sheldon-chan" target="_blank">
+            <img
+              className="linkedin"
+              src="https://i.imgur.com/83A2RjE.png"
+              alt="https://www.linkedin.com/in/sheldon-chan/"
+            />
+          </a>
+        </h3>
       </div>
     );
 
     const loggedOut = () => (
       <div>
-        <h1 className="welcome-message">rtt</h1>
+        <h1 className="welcome-message">
+          <a href="https://github.com/Shelchamp/RumTumTugger" target="_blank">
+            <img
+              className="github-out"
+              src="https://i.imgur.com/JWA2kGT.png"
+              alt="https://github.com/Shelchamp/RumTumTugger"
+            />
+            {/*HERE IS THE LOGIN LOGO*/}
+          </a>rtt<a
+            href="https://www.linkedin.com/in/sheldon-chan"
+            target="_blank"
+          >
+            <img
+              className="linkedin-out"
+              src="https://i.imgur.com/83A2RjE.png"
+              alt="https://www.linkedin.com/in/sheldon-chan/"
+            />
+          </a>
+        </h1>
         <div className="button-div demo-div">
           <button className="demo-login" onClick={this.handleLogin}>
             Demo Login
