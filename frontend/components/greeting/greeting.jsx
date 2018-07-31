@@ -9,13 +9,14 @@ class Greeting extends React.Component {
     // this.handleLogout = this.handleLogout.bind(this);
     this.users = [
       { email: "Josuke@jojo.com", password: "CrazyDiamond" },
-      { email: "Kira@jojo.com", password: "KillerQueen" }
+      { email: "Kira@jojo.com", password: "KillerQueen" },
+      { email: "Tugger@cat.com", password: "MeowMeow" }
     ];
   }
 
   handleLogin(e) {
     e.preventDefault();
-    const user = this.users[Math.floor(Math.random() * 2)];
+    const user = this.users[Math.floor(Math.random() * 3)];
     this.props.login(user).then(() => this.props.history.push("/feed"));
     setTimeout();
   }

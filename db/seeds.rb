@@ -26,8 +26,17 @@ kira = {
   password: 'KillerQueen'
 }
 
+tugger = {
+  username: 'Tugger',
+  email: 'Tugger@cat.com',
+  image_url: '',
+  bio: 'Meow.',
+  password: 'MeowMeow'
+}
+
 user1 = User.create(josuke)
 user2 = User.create(kira)
+user3 = User.create(tugger)
 
 #CREATE USERS FIRST
 
@@ -53,7 +62,7 @@ test_post3 = {
   title: '',
   body: '',
   image_url: 'https://i.imgur.com/kfd4lI6.png',
-  user_id: user1.id
+  user_id: user3.id
 }
 #
 test_post4 = {
@@ -69,7 +78,7 @@ test_post5 = {
   title: '',
   body: '',
   image_url: 'https://i.imgur.com/Nf6wb7u.gif',
-  user_id: user2.id
+  user_id: user3.id
 }
 
 
@@ -82,7 +91,7 @@ post4 = Post.create(test_post4)
   title: Faker::RuPaul.queen,
   body: Faker::RuPaul.quote,
   image_url: '',
-  user_id: [user1.id, user2.id].sample
+  user_id: [user1.id, user2.id, user3.id].sample
   )}
 
   post5 = Post.create(test_post5)
@@ -92,7 +101,7 @@ post4 = Post.create(test_post4)
   title: Faker::LeagueOfLegends.quote,
   body: Faker::LeagueOfLegends.champion,
   image_url: '',
-  user_id: [user1.id, user2.id].sample
+  user_id: [user1.id, user2.id, user3.id].sample
   )}
 
   post1 = Post.create(test_post1)
@@ -103,7 +112,7 @@ post4 = Post.create(test_post4)
   title: Faker::OnePiece.quote,
   body: Faker::OnePiece.character,
   image_url: '',
-  user_id: [user1.id, user2.id].sample
+  user_id: [user1.id, user2.id, user3.id].sample
   )}
 #
 
