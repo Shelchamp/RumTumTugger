@@ -24,6 +24,13 @@ class Greeting extends React.Component {
   // DEMO LOGIN BUTTON
 
   render() {
+    let userName;
+    if (this.props.currentUser && this.props.currentUser.username) {
+      userName = this.props.currentUser.username;
+    } else {
+      userName = "";
+    }
+
     const loggedIn = () => (
       <div>
         <h3 className="welcome">
@@ -43,9 +50,8 @@ class Greeting extends React.Component {
             />
           </a>
         </h3>
-        <h2 className="user-welcome">
-          Make yourself at home, {this.props.currentUser.username}
-        </h2>
+
+        <h2 className="user-welcome">Make yourself at home, {userName}</h2>
       </div>
     );
 
@@ -77,6 +83,7 @@ class Greeting extends React.Component {
         </div>
       </div>
     );
+
     // debugger
     return (
       <div className="fade-in">
