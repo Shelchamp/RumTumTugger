@@ -25,7 +25,7 @@ class VideoPostForm extends React.Component {
     if (
       this.state["image_url"].includes("https") &&
       this.state["image_url"].includes("youtube") &&
-      this.state["image_url"].includes("embed")
+      this.state["image_url"].includes("/embed/")
     ) {
       postButton = (
         <button className="tx-button create-post-button" type="submit">
@@ -74,7 +74,14 @@ class VideoPostForm extends React.Component {
                   </div>
                   <div>
                     <h1 className="example-vid">
-                      (ex: https://www.youtube.com/embed/dQw4w9WgXcQ )
+                      <h1 className="guide">-replace-</h1>
+                      https://www.youtube.com/<b className="bold">
+                        watch?v=
+                      </b>dQw4w9WgXcQ
+                      <h1 className="guide">-with-</h1>
+                      https://www.youtube.com/<b className="bold">
+                        embed/
+                      </b>dQw4w9WgXcQ
                     </h1>
                   </div>
                   <div className="caption-field">

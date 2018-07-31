@@ -85,3 +85,17 @@
   width: 90px;
   margin: 35px 45px 0;
 }
+
+.user-welcome {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  // text-shadow: 2px 2px black;
+  font-family: $hel-norm;
+  font-size: 25px;
+  font-weight: 500;
+  // -webkit-text-stroke: 1px $light-font;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

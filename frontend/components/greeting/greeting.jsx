@@ -34,7 +34,7 @@ class Greeting extends React.Component {
               alt="https://github.com/Shelchamp/RumTumTugger"
             />
           </a>
-          Welcome to RumTumTugger{" "}
+          Welcome to RumTumTugger
           <a href="https://www.linkedin.com/in/sheldon-chan" target="_blank">
             <img
               className="linkedin"
@@ -43,6 +43,9 @@ class Greeting extends React.Component {
             />
           </a>
         </h3>
+        <h2 className="user-welcome">
+          Make yourself at home, {this.props.currentUser.username}
+        </h2>
       </div>
     );
 
