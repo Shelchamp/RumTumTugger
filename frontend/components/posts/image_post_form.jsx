@@ -53,7 +53,9 @@ class ImagePostForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.action(this.state).then(this.props.history.push("/"));
+    this.props
+      .action(this.state)
+      .then(setTimeout(this.props.history.push("/")), 1500);
   }
 
   render() {
