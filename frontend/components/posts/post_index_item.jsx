@@ -35,8 +35,24 @@ const PostIndexItem = props => {
   }
   let author = props.author;
   if (!author) {
-    author = { username: "" };
+    author = { username: "", id: "" };
   }
+
+  // ensure that there's a user, otherwise
+  let userId = props.userId;
+  if (!userId) {
+    userId = "";
+  }
+
+  // conditional edit button
+  const edit = () => <button className="edit-button">Edit</button>;
+
+  let editButton;
+  // if (userId === author.id) {
+  //   editButton = edit();
+  // }
+  editButton = userId === author.id ? edit() : <div />;
+
   return (
     <li className="post-index-item">
       <div className="post post-full">
@@ -45,7 +61,13 @@ const PostIndexItem = props => {
         </div>
         <div className="post-wrapper">
           <div className="post-header">
-            <div className="post-author">{author.username}</div>
+            <div className="post-author">
+              {author.username}
+              {/*
+                NEED TO IMPLEMENTED 10 / 18
+              */}
+            </div>
+            {editButton}
           </div>
           <div className="post-content">
             <div className="post-container">

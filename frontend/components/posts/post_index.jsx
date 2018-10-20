@@ -18,15 +18,14 @@ class PostIndex extends React.Component {
         <ol>
           {/*
               */}
-          {this.props.posts &&
-            this.props.users &&
-            this.props.posts.map(post => (
-              <PostIndexItem
-                post={post}
-                key={post.id}
-                author={this.props.users[post.user_id]}
-              />
-            ))}
+          {this.props.posts.map(post => (
+            <PostIndexItem
+              post={post}
+              key={post.id}
+              author={this.props.users[post.user_id]}
+              userId={this.props.currentUser}
+            />
+          ))}
         </ol>
       </div>
     );

@@ -3,9 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "../variables/*";
 
-
-
-.post.post-full{
+.post.post-full {
   width: 540px;
   font-size: 14px;
   background: #fff;
@@ -17,8 +15,7 @@
   margin-top: 16px;
 }
 
-
-.post-container{
+.post-container {
   margin: auto;
   margin-top: 5px;
   align-items: center;
@@ -32,13 +29,12 @@
   margin: 0 0 20px;
 }
 
-
-.post{
+.post {
   box-sizing: border-box;
   position: relative;
 }
 
-.post-avatar{
+.post-avatar {
   border-radius: 3px;
   background-color: $tumblr-back;
   text-decoration: none;
@@ -50,7 +46,7 @@
   top: 0;
 }
 
-.post-header{
+.post-header {
   color: #8f8f8f;
   word-wrap: normal;
   white-space: nowrap;
@@ -62,20 +58,22 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.post-full .post-wrapper{
+.post-full .post-wrapper {
   zoom: 1;
   background: inherit;
   border-radius: inherit;
 }
 
-.post-header .post.post-full{
+.post-header .post.post-full {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.post-full .post-header{
+.post-full .post-header {
   font-size: 13px;
   margin: -3px 0 13px;
   line-height: 20px;
@@ -85,70 +83,71 @@
   position: relative;
 }
 
-.post-content .post-title{
-  font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+.post-content .post-title {
+  font-family: Gibson, Helvetica Neue, HelveticaNeue, Helvetica, Arial,
+    sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 47px;
 }
 
-.post.post-full .post-title{
+.post.post-full .post-title {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.post-full, .post-title{
+.post-full,
+.post-title {
   margin-bottom: 10px;
 }
 
-.post.post-full .post-body{
+.post.post-full .post-body {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 18px;
 }
 
-.post-full .post-body{
+.post-full .post-body {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.post .post-body{
-  font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+.post .post-body {
+  font-family: Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
 
-.post-full .post-tags{
+.post-full .post-tags {
   color: #8f8f8f;
   padding: 0 20px;
   line-height: 20px;
   overflow: hidden;
 }
 
-.post .post-tags{
+.post .post-tags {
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-
-.post .post-tags-inner{
+.post .post-tags-inner {
   float: left;
   position: relative;
   font-family: $hel-norm;
   font-size: 13px;
 }
 
-.post-footer{
+.post-footer {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.post-full .post-footer{
+.post-full .post-footer {
   zoom: 1;
 }
 
-.post-full .post-footer{
+.post-full .post-footer {
   display: table;
   width: 100%;
   border-spacing: 0;
@@ -158,36 +157,36 @@
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   line-height: 45px;
-  border-top: 1px solid rgba(0, 0, 0, 0.07)
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
 }
 
-.post-full .post-notes{
+.post-full .post-notes {
   display: table-cell;
   width: 100%;
   vertical-align: top;
 }
 
-.post-full .post-notes-inner{
+.post-full .post-notes-inner {
   padding-right: 10px;
   font-family: $hel-norm;
   font-size: 13px;
 }
 
-.post-controls{
+.post-controls {
   display: table-cell;
   width: 100%;
   line-height: 0;
   vertical-align: top;
 }
 
-.post-controls .post-controls-inner{
+.post-controls .post-controls-inner {
   height: 45px;
   font-size: 0;
   text-align: right;
   white-space: nowrap;
 }
 
-.post-controls .post-control.post-controller-icon{
+.post-controls .post-control.post-controller-icon {
   width: 24px;
 }
 
@@ -195,7 +194,7 @@
   margin-left: 0;
 }
 
-.post-controls .post-control{
+.post-controls .post-control {
   margin: 10px 0 10px 12px;
   display: inline-block;
   position: relative;
@@ -204,9 +203,31 @@
   cursor: pointer;
 }
 
-.post-author{
+.post-author {
   font-family: $hel-norm;
   font-weight: 600;
   font-size: 15px;
   color: black;
+}
+
+.edit-button {
+  background-color: #dde4e8;
+  color: #fff;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0px 12px 0px 12px;
+  border-radius: 2px;
+  font-family: $hel-light;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  border: 1px solid #e5e9ed;
+
+  color: #fff;
 }

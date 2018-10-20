@@ -1,21 +1,22 @@
-import { connect } from 'react-redux';
-import PostIndex from './post_index';
-import { fetchPosts } from '../../actions/post_actions';
-import { fetchUsers } from '../../actions/user_actions';
+import { connect } from "react-redux";
+import PostIndex from "./post_index";
+import { fetchPosts } from "../../actions/post_actions";
+import { fetchUsers } from "../../actions/user_actions";
 
-
-const mapStateToProps = (state) => {
-
+const mapStateToProps = state => {
   return {
-  posts: Object.values(state.entities.posts).reverse(),
-  users: state.entities.users
-
-}}
+    posts: Object.values(state.entities.posts).reverse(),
+    users: state.entities.users,
+    currentUser: state.session.id
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchPosts: () => dispatch(fetchPosts()),
   fetchUsers: () => dispatch(fetchUsers())
-})
+});
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(PostIndex);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PostIndex);
