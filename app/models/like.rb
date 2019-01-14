@@ -1,32 +1,26 @@
 # == Schema Information
 #
-# Table name: posts
+# Table name: likes
 #
 #  id         :bigint(8)        not null, primary key
-#  post_type  :string           not null
-#  title      :string
-#  body       :text
-#  image_url  :string
 #  user_id    :integer          not null
+#  post_id    :integer          not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Post < ApplicationRecord
+class Like < ApplicationRecord
 
-  validates :post_type, :user_id, presence: true
+  validates :user_id, :post_id, presence: true
+
+  belongs_to :post, 
+  primary_key: :id,
+  foreign_key: :post_id,
+  class_name: :Post
 
   belongs_to :user,
   primary_key: :id,
   foreign_key: :user_id,
   class_name: :User
-
-  has_many :likes,
-  primary_key :id,
-  foreign_key :post_id,
-  class_name: :Like
-
-
-
 
 end
