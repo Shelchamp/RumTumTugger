@@ -17,14 +17,14 @@ class Post < ApplicationRecord
   validates :post_type, :user_id, presence: true
 
   belongs_to :user,
-  primary_key: :id,
-  foreign_key: :user_id,
-  class_name: :User
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :User
 
   has_many :likes,
-  primary_key :id,
-  foreign_key :post_id,
-  class_name: :Like
+    primary_key: :id,
+    foreign_key: :post_id,
+    class_name: :Like
 
 
 
