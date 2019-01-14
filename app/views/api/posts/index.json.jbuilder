@@ -6,10 +6,13 @@ json.posts do
   end
 end
 
-json.users do
+ json.users do
   @posts.each do |post|
     json.set! post.user_id do
       json.extract! post.user, :id, :username
     end
   end
 end
+
+
+
