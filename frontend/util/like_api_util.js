@@ -5,6 +5,13 @@ export const createLike = post => {
   });
 };
 
+export const getLikes = () => {
+  return $.ajax({
+    method: "GET",
+    url: `/api/likes`
+  });
+};
+
 // export const deleteLike = like => {
 //   return $.ajax({
 //     method: "DELETE",

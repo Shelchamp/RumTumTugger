@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import configureStore from "./store/store";
 import Root from "./components/root";
 
-// import createLike from "./actions/like_actions";
-// import createLike from "./util/like_api_util";
+// TESTING
+import receiveLike from "./actions/like_actions";
+// TESTING
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -24,7 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //TESTING
-  // window.store = store;
+  const newLike = {
+    id: 1,
+    user_id: 48,
+    post_id: 165
+  };
+  window.newLike = newLike;
+  window.store = store;
+  window.receiveLike = receiveLike;
   //TESTING
 
   ReactDOM.render(<Root store={store} />, root);
