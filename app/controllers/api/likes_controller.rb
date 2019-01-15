@@ -6,14 +6,17 @@ class Api::LikesController < ApplicationController
   end
 
   def create
-    # @like = Like.new({user_id: current_user.id, post_id: params[:post_id]})
     @like = Like.new
+    # @like = Like.new({user_id: current_user.id, post_id: params[:post_id]})
     @like.user_id = current_user.id
     @like.post_id = params[:post_id]
-    # Where do we get the post id from?
-    # @like.post_id = 
+    
 
-    unless @post.save!
+    puts "HERE"
+    puts @like.user_id
+    puts @like.post_id
+
+    unless @like.save!
       flash[:errors] = @like.errors.full_messages
     end
 
