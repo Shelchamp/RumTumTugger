@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import configureStore from './store/store';
-import Root from './components/root';
+import React from "react";
+import ReactDOM from "react-dom";
+import configureStore from "./store/store";
+import Root from "./components/root";
 
-document.addEventListener("DOMContentLoaded", ()=>{
+// import createLike from "./actions/like_actions";
+// import createLike from "./util/like_api_util";
 
-
-
-  const root = document.getElementById('root');
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.getElementById("root");
   let store;
 
   if (window.currentUser) {
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }
 
   //TESTING
-
+  // window.store = store;
   //TESTING
 
-  ReactDOM.render(<Root store={store}/>, root);
+  ReactDOM.render(<Root store={store} />, root);
 });

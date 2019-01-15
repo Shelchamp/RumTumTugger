@@ -10,11 +10,6 @@ class Api::LikesController < ApplicationController
     # @like = Like.new({user_id: current_user.id, post_id: params[:post_id]})
     @like.user_id = current_user.id
     @like.post_id = params[:post_id]
-    
-
-    puts "HERE"
-    puts @like.user_id
-    puts @like.post_id
 
     unless @like.save!
       flash[:errors] = @like.errors.full_messages
