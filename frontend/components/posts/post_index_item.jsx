@@ -1,6 +1,12 @@
 import React from "react";
 
 const PostIndexItem = props => {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("The link was clicked.");
+    console.log("Current user:", props.userId);
+    console.log("This post's author:", props.author.id);
+  }
   {
     /*
     let user_id = props.post.user_id;
@@ -87,7 +93,17 @@ const PostIndexItem = props => {
           </div>
           <div className="post-footer">
             <div className="post-notes">
-              <div className="post-notes-inner">notes</div>
+              {/* 
+                TURN NOTES INTO LIKES
+              */}
+              <div className="post-notes-inner">
+                <ul>
+                  {/* LIKE HEART*/}
+                  <li className="likes-list" onClick={handleClick}>
+                    &lt;3
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="post-controls">
               <div className="post-controls-inner">

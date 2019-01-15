@@ -110,15 +110,10 @@ class PostForm extends React.Component {
                       </Link>
                     </div>
                     <div className="control right">
-                      {/*
-                         <div className='post-form-save-button'>
-                    <div className='split-button'> 
-                   
-                  */}
+                      {/* 
+                        POST BUTTON
+                      */}
                       {postButton}
-
-                      {/*   </div>
-                         </div> */}
                     </div>
                   </div>
                 </div>
