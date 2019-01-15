@@ -67,7 +67,10 @@ const PostIndexItem = props => {
                 NEED TO IMPLEMENTED 10 / 18
               */}
             </div>
-            {editButton}
+            {/* 
+              EDIT BUTTON
+              {editButton}
+            */}
           </div>
           <div className="post-content">
             <div className="post-container">
