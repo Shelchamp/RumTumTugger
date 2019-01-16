@@ -1,26 +1,26 @@
 @import "../variables/*";
 
 .post.new-post {
-    position: relative;
-    min-height: 99px;
-    width: auto;
-    height: auto;
-    padding: 0;
-    text-align: center;
-    clear: both;
-    background-color: #fff;
-    word-wrap: break-word;
+  position: relative;
+  min-height: 99px;
+  width: auto;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  clear: both;
+  background-color: #fff;
+  word-wrap: break-word;
 }
 
-.post.new-post .post-buttons{
+.post.new-post .post-buttons {
   padding: 0 1px 0 7px;
 }
 
-.clearfix{
+.clearfix {
   zoom: 1;
 }
 
-.post.new-post .new-post-label{
+.post.new-post .new-post-label {
   float: left;
   position: relative;
   top: 0;
@@ -34,10 +34,11 @@
   font-weight: normal;
   // border: 1px solid black;
   text-decoration: none;
-  background: transparent url('https://i.imgur.com/CxCXqqb.png') no-repeat right center;
+  // background: transparent url("https://i.imgur.com/CxCXqqb.png") no-repeat right
+  //   center;
 }
 
-i{
+i {
   opacity: 1;
   transform: scale(1) translateY(0px);
 }
@@ -62,18 +63,17 @@ i{
   transition-delay: 0s;
 }
 
-.new-post-label-text{
+.new-post-label-text {
   display: block;
   width: 75px;
   text-align: center;
 }
 
-
-.new-post-buttons{
+.new-post-buttons {
   margin: auto;
 }
 
-[class*="new-post-label"]{
+[class*="new-post-label"] {
   font-family: $hel-norm;
 }
 //
@@ -83,3 +83,8 @@ i{
 //   background-position: -834px -6px;
 //   background-color: black;
 // }
+
+.post-button-div {
+  display: flex;
+  justify-content: space-evenly;
+}
