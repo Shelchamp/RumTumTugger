@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //TESTING
-  const newLike = {
-    id: 1,
-    user_id: 48,
-    post_id: 165
-  };
-  window.newLike = newLike;
-  window.store = store;
-  window.receiveLike = receiveLike;
+  // const newLike = {
+  //   id: 1,
+  //   user_id: 48,
+  //   post_id: 165
+  // };
+  // window.newLike = newLike;
+  // window.store = store;
+  // window.receiveLike = receiveLike;
   //TESTING
 
   ReactDOM.render(<Root store={store} />, root);
