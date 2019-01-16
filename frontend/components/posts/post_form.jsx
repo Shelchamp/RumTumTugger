@@ -56,6 +56,9 @@ class PostForm extends React.Component {
           <div className="post-container">
             <div className="post-container-inner post">
               <div className="post-form-header clearfix" />
+              {/* 
+                FORM TAG & onSubmit
+              */}
               <form onSubmit={this.handleSubmit}>
                 <div className="post-form-form post-content-text">
                   <div className="title-field">

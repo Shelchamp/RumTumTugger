@@ -1,4 +1,5 @@
 import React from "react";
+// import LikeButton from "../likes/like_button";
 
 const PostIndexItem = props => {
   function handleClick(e) {
@@ -6,7 +7,11 @@ const PostIndexItem = props => {
     console.log("The link was clicked.");
     console.log("Current user:", props.userId);
     console.log("This post's author:", props.author.id);
+    console.log("Is this the store?", store.getState());
   }
+
+  // USE THE CURRENT POST'S ID AND GRAB ALL THE ASSOCIATED LIKES FROM THE DB
+
   {
     /*
     let user_id = props.post.user_id;
@@ -14,6 +19,17 @@ const PostIndexItem = props => {
     LOGIC TO CONDITIONALLY RENDER A PICTURE OR VIDEO
     */
   }
+
+  const likeHeart = () => (
+    <ul>
+      {/* LIKE HEART*/}
+      <li className="likes-list" onClick={handleClick}>
+        &lt;3
+      </li>
+    </ul>
+  );
+
+  let likeButton = likeHeart();
 
   const imagePost = () => <img src={props.post.image_url} />;
 
@@ -97,12 +113,8 @@ const PostIndexItem = props => {
                 TURN NOTES INTO LIKES
               */}
               <div className="post-notes-inner">
-                <ul>
-                  {/* LIKE HEART*/}
-                  <li className="likes-list" onClick={handleClick}>
-                    &lt;3
-                  </li>
-                </ul>
+                {/* LIKE HEART*/}
+                {likeButton}
               </div>
             </div>
             <div className="post-controls">
