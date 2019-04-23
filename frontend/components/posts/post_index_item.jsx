@@ -1,13 +1,14 @@
 import React from "react";
-// import LikeButton from "../likes/like_button";
+import LikeButton from "../likes/like_button";
 
 const PostIndexItem = props => {
   function handleClick(e) {
     e.preventDefault();
     // console.log("The link was clicked.");
-    //   console.log("Current user:", props.userId);
-    //   console.log("This post's author:", props.author.id);
-    //   console.log("Is this the store?", store.getState());
+      console.log("Current user:", props.userId);
+      console.log("This post's author:", props.author.id);
+      console.log(props.likes, "users like this post.")
+      // console.log("Is this the store?", store.getState());
   }
 
   // USE THE CURRENT POST'S ID AND GRAB ALL THE ASSOCIATED LIKES FROM THE DB
@@ -24,7 +25,7 @@ const PostIndexItem = props => {
     <ul>
       {/* LIKE HEART*/}
       <li className="likes-list" onClick={handleClick}>
-        &lt;3
+        &lt;3 
       </li>
     </ul>
   );

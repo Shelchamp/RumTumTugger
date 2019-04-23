@@ -7,20 +7,20 @@ export const createLike = post => dispatch => {
   LikeApiUtil.createLike(post).then(like => dispatch(receiveLike(like)));
 };
 
-// export const fetchLikes = () => {
-//   dispatch(
-//     LikeApiUtil.fetchLikes().then(likes => dispatch(receiveAllLikes(likes)))
-//   );
-// };
+export const fetchLikes = () => {
+  dispatch(
+    LikeApiUtil.fetchLikes().then(likes => dispatch(receiveAllLikes(likes)))
+  );
+};
 
 const receiveLike = like => ({
   type: RECEIVE_LIKE,
   like
 });
 
-// const receiveAllLikes = likes => ({
-//   type: RECEIVE_ALL_LIKES,
-//   likes
-// });
+const receiveAllLikes = likes => ({
+  type: RECEIVE_ALL_LIKES,
+  likes
+});
 
 export default receiveLike;

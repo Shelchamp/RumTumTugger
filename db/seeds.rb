@@ -118,3 +118,43 @@ post4 = Post.create(test_post4)
 
 #
 post3 = Post.create(test_post3)
+
+
+# CREATE LIKES
+Like.destroy_all
+dum_like1 = {
+  post_id: post1.id, 
+  user_id: user1.id 
+} 
+
+dum_like2 = {
+  post_id: post1.id, 
+  user_id: user2.id 
+}
+
+dum_like3 = {
+  post_id: post1.id, 
+  user_id: user3.id 
+}
+
+dum_like4 = {
+  post_id: post3.id, 
+  user_id: user2.id 
+}
+
+dum_like5 = {
+  post_id: post2.id, 
+  user_id: user2.id 
+}
+
+dum_like5 = {
+  post_id: post3.id, 
+  user_id: user1.id 
+}
+
+like1 = Like.create(dum_like1)
+like2 = Like.create(dum_like2)
+like3 = Like.create(dum_like3)
+like4 = Like.create(dum_like4)
+like5 = Like.create(dum_like5)
+
