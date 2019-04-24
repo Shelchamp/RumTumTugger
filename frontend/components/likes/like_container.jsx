@@ -5,12 +5,15 @@ import { createLike } from "../../actions/like_actions";
 
 const mapStateToProps = state => {
   return {
-    currentUser: state.session.id
+    // currentUser: state.session.id,
+    likes: state.entities.likes
+
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  createLike: post => dispatch(createLike(post))
+  createLike: post => dispatch(createLike(post)),
+  fetchLikes: () => dispatch(fetchLikes())
 });
 
 export default connect(
