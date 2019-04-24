@@ -235,5 +235,9 @@
 .likes-list {
   cursor: pointer;
   display: inline-block;
-  width: 25px;
+  width: 250px;
+}
+
+.liked-post{
+  color: red;
 }

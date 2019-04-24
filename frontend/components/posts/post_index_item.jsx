@@ -7,7 +7,8 @@ const PostIndexItem = props => {
     // console.log("The link was clicked.");
       console.log("Current user:", props.userId);
       console.log("This post's author:", props.author.id);
-      console.log(props.likes, "users like this post.")
+      // console.log(props.likes.length, "users like this post.")
+      console.log("here are the likes", props.likes);
       // console.log("Is this the store?", store.getState());
   }
 
@@ -21,14 +22,34 @@ const PostIndexItem = props => {
     */
   }
 
-  const likeHeart = () => (
-    <ul>
-      {/* LIKE HEART*/}
-      <li className="likes-list" onClick={handleClick}>
-        &lt;3 
-      </li>
-    </ul>
-  );
+  const likeHeart = () => {
+    // Count the number of likes
+    let numLikes = Object.keys(props.likes).length
+    // Check if the current user has liked this post
+    const isLiked = props.likes[props.userId];
+    // If the current user liked this post, add styling
+    const likedStyle = isLiked ? "liked-post" : "";
+    // If the current user liked this post, alter display text
+    let likedText = "";
+    let other = "";
+    if (isLiked) {
+      numLikes--;
+      likedText = "You and ";
+      other = " other "
+    }
+    
+    const text = numLikes === 0 ? "" : `${likedText}${numLikes}${other} people liked this`;
+
+    return (
+      <ul>
+        {/* LIKE HEART*/}
+        <li className="likes-list" onClick={handleClick}>
+          <span className={likedStyle}>&lt;3</span> {text}
+        </li>
+      </ul>
+    )
+    
+  };
 
   let likeButton = likeHeart();
 

@@ -8,25 +8,30 @@ class PostIndex extends React.Component {
   componentDidMount() {
     this.props.fetchPosts();
     this.props.fetchUsers();
-    this.props.fetchLikes();
+    // this.props.fetchLikes();
     // debugger
   }
 
   render() {
     // debugger
+    
     return (
       <div className="post-index-container fade-in">
         <ol>
           {/*
               */}
-          {this.props.posts.map(post => (
-            <PostIndexItem
+          {this.props.posts.map(post => {
+            // format the likes
+            const likes = {};
+            post.likes.forEach(like => likes[like.user_id] = true);
+            return <PostIndexItem
               post={post}
               key={post.id}
               author={this.props.users[post.user_id]}
               userId={this.props.currentUser}
+              likes={likes}
             />
-          ))}
+          })}
         </ol>
       </div>
     );
