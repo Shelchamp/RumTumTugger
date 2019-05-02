@@ -2,18 +2,7 @@ import React from "react";
 import LikeButton from "../likes/like_button";
 
 const PostIndexItem = props => {
-  function handleClick(e) {
-    e.preventDefault();
-    // console.log("The link was clicked.");
-      console.log("Current user:", props.userId);
-      console.log("This post's author:", props.author.id);
-      // console.log(props.likes.length, "users like this post.")
-      console.log("here are the likes", props.likes);
-      // console.log("Is this the store?", store.getState());
-  }
-
-  // USE THE CURRENT POST'S ID AND GRAB ALL THE ASSOCIATED LIKES FROM THE DB
-
+  
   {
     /*
     let user_id = props.post.user_id;
@@ -21,37 +10,8 @@ const PostIndexItem = props => {
     LOGIC TO CONDITIONALLY RENDER A PICTURE OR VIDEO
     */
   }
-
-  const likeHeart = () => {
-    // Count the number of likes
-    let numLikes = Object.keys(props.likes).length
-    // Check if the current user has liked this post
-    const isLiked = props.likes[props.userId];
-    // If the current user liked this post, add styling
-    const likedStyle = isLiked ? "liked-post" : "";
-    // If the current user liked this post, alter display text
-    let likedText = "";
-    let other = "";
-    if (isLiked) {
-      numLikes--;
-      likedText = "You and ";
-      other = " other "
-    }
-    
-    const text = numLikes === 0 ? "" : `${likedText}${numLikes}${other} people liked this`;
-
-    return (
-      <ul>
-        {/* LIKE HEART*/}
-        <li className="likes-list" onClick={handleClick}>
-          <span className={likedStyle}>&lt;3</span> {text}
-        </li>
-      </ul>
-    )
-    
-  };
-
-  let likeButton = likeHeart();
+  const numLikes = Object.keys(props.likes).length
+  const isLiked = props.likes[props.userId];
 
   const imagePost = () => <img src={props.post.image_url} />;
 
@@ -136,7 +96,8 @@ const PostIndexItem = props => {
               */}
               <div className="post-notes-inner">
                 {/* LIKE HEART*/}
-                {likeButton}
+                {/* {likeButton} */}
+                <LikeButton isLiked={isLiked} numLikes={numLikes}/>
               </div>
             </div>
             <div className="post-controls">

@@ -233,11 +233,15 @@
 }
 
 .likes-list {
-  cursor: pointer;
+  // cursor: pointer;
   display: inline-block;
   width: 250px;
 }
 
 .liked-post{
   color: red;
+}
+
+.like-heart{
+  cursor: pointer;
 }
