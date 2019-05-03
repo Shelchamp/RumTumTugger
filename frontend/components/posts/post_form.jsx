@@ -20,7 +20,7 @@ class PostForm extends React.Component {
     this.props.action(this.state).then(
       setTimeout(() => {
         this.props.history.push("/");
-      })
+      }, 1000)
     );
   }
 

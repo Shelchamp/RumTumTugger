@@ -8,7 +8,6 @@ class PostIndex extends React.Component {
   componentDidMount() {
     this.props.fetchPosts();
     this.props.fetchUsers();
-    // this.props.fetchLikes();
     // debugger
   }
 
@@ -30,6 +29,7 @@ class PostIndex extends React.Component {
               author={this.props.users[post.user_id]}
               userId={this.props.currentUser}
               likes={likes}
+              createLike={this.props.createLike}
             />
           })}
         </ol>

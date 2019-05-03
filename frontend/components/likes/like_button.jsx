@@ -18,20 +18,31 @@ class LikeButton extends React.Component {
   render() {
     // Count the number of likes
     let numLikes = this.props.numLikes;
+    // These variables will hold the conditionally rendering text
     let likedStyle = "";
-    let likedText = "";
+    let you = this.props.isLiked ? "You" : "";
     let other = "";
+    let person = "person";
+    let and = "";
     // Check if the current user has liked this post
+    // If the current user liked this post, alter display text
     if (this.props.isLiked) {
-      // If the current user liked this post, alter display text
-      numLikes--;
-      likedText = "You and ";
-      other = " other "
       // If the current user liked this post, add styling
       likedStyle = "liked-post";
+      // you = "You";
+      and = numLikes > 1 ? "and" : "";
+      other = numLikes > 1 ? "other" : "";
+      if (numLikes === 1) {
+        person = "";
+      } 
+      numLikes--;
+      numLikes = numLikes === 0 ? "" : numLikes;
     } 
+    if (numLikes > 1) {
+      person = "people";
+    }
 
-    const text = numLikes === 0 ? "" : `${likedText}${numLikes}${other} people liked this`;
+    const text = this.props.numLikes === 0 ? "" : `${you} ${and} ${numLikes} ${other} ${person} liked this`;
 
     return (
       <ul>
