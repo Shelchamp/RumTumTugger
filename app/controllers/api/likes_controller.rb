@@ -5,26 +5,24 @@ class Api::LikesController < ApplicationController
     render `api/likes/index`
   end
 
-  def create
-    @like = Like.new
-    
+  def create    
     @like = Like.new({user_id: current_user.id, post_id: params[:post_id]})
-    # @like.user_id = current_user.id
-    # @like.post_id = params[:user_id]
-
+    
     unless @like.save!
-      # flash[:errors] = @like.errors.full_messages
+      flash[:errors] = @like.errors.full_messages
     end
 
     render json: `api/likes/show`
-
-
   end
 
-  
-  # private
+  def destroy 
+    @like = Like.find_by({user_id: current_user.id, post_id: params[:post_id]})
 
-  # def like_params
-  #   params.require(:like).permit(:post_id)
-  # end
+    unless @like.destroy! 
+      flash[:errors] = @like.errors.full_messages
+    end
+
+    render json: `api/likes/show`
+  end
+
 end
