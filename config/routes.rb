@@ -14,12 +14,13 @@ Rails.application.routes.draw do
     resources :posts, only:[:index, :show] do 
       # At this point, the user is no longer relevant, okay to have this top level route
       resources :likes, only:[:create]
+      resource :likes, only:[:destroy]
     end 
 
     # delete '/likes', to:
 
     # delete '/likes', to: 'likes#destroy'
-    resources :likes, only:[:index, :show, :destroy]
+    resources :likes, only:[:index, :show]
 
   end
 

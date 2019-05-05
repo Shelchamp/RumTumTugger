@@ -12,7 +12,7 @@ class PostIndex extends React.Component {
   }
 
   render() {
-    // debugger
+    // debugger 
     
     return (
       <div className="post-index-container fade-in">
@@ -30,6 +30,7 @@ class PostIndex extends React.Component {
               userId={this.props.currentUser}
               likes={likes}
               createLike={this.props.createLike}
+              deleteLike={this.props.deleteLike}
             />
           })}
         </ol>

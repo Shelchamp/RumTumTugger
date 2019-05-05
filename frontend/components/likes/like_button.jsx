@@ -6,25 +6,46 @@ class LikeButton extends React.Component {
     this.state = {
       isLiked : this.props.isLiked,
       numLikes : this.props.numLikes
-     };
+    };
     this.handleClick = this.handleClick.bind(this);
   }
   
   handleClick(e) {
     e.preventDefault();
-    let numLikes = this.state.numLikes + 1;
-    this.props.createLike({ post_id: this.props.post_id }).then(
-      setTimeout(() => {
-        this.setState({ isLiked: true, numLikes: numLikes })
-      }, 100)
-    )
+    const isLiked = this.state.isLiked;
+    let numLikes =  this.state.numLikes;
+    if (!isLiked) {
+      // If it's currently not liked...
+      console.log("Send nudes")
+      numLikes++;
+      this.props.createLike({ post_id: this.props.post_id }).then(
+        setTimeout(() => {
+          this.setState({ 
+            isLiked: !this.state.isLiked, 
+            numLikes: numLikes })
+        }, 100)
+      )
+    } else {
+      // If it's already liked...
+      console.log("They see me rollin")
+      numLikes--;
+      this.props.deleteLike({ post_id: this.props.post_id }).then(
+        setTimeout(() => {
+          this.setState({
+            isLiked: !this.state.isLiked,
+            numLikes: numLikes
+          });
+        }, 100)
+      );
+    }
   }
   
   render() {
     const isLiked = this.state.isLiked;
     
     // Conditionally render like button. Prevent from liking twice
-    let handleClick = isLiked ? null : this.handleClick // Implement delete here
+    // let handleClick = isLiked ? () => console.log("YEEET") : this.handleClick // Implement delete here
+    let handleClick = this.handleClick // Implement delete here
     
     
     // Count the number of likes

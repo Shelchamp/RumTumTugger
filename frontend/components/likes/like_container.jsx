@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import LikeButton from "./like_button";
-import { createLike } from "../../actions/like_actions";
+import { createLike, deleteLike } from "../../actions/like_actions";
 // import { fetchUsers } from "../../actions/user_actions";
 
 const mapStateToProps = state => {
@@ -13,6 +13,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   createLike: post => dispatch(createLike(post)),
+  deleteLike: post => dispatch(deleteLike(post)),
   fetchLikes: () => dispatch(fetchLikes())
 });
 

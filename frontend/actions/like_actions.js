@@ -15,8 +15,8 @@ export const fetchLikes = () => dispatch => (
 
 export const deleteLike = post => dispatch => (
   LikeApiUtil.deleteLike(post)
-    .then(like => dispatch(deleteLike(like)))
-)
+    .then(like => dispatch(receiveDeleteLike(like)))
+);
 
 const receiveLike = like => ({
   type: RECEIVE_LIKE,
@@ -28,9 +28,9 @@ const receiveAllLikes = likes => ({
   likes
 });
 
-const deleteLike = like => ({
+const receiveDeleteLike = like => ({
   type: DELETE_LIKE,
   like
-})
+});
 
 export default receiveLike;

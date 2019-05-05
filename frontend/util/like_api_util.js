@@ -15,6 +15,6 @@ export const getLikes = () => {
 export const deleteLike = post => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/posts/${post.post_id}/likes`
+    url: `/api/posts/${post.post_id}/likes/`
   });
 };

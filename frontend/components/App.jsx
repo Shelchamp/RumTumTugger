@@ -11,7 +11,6 @@ import CreatePostContainer from "./posts/create_post_container";
 import CreateImagePostContainer from "./posts/create_image_post_container";
 import CreateVideoPostContainer from "./posts/create_video_post_container";
 import PostFormNav from "./posts/post_form_nav";
-import LikeContainer from "./likes/like_container";
 const App = () => (
   <div className="fullscreen">
     <Route path="/" component={NavBarContainer} />
@@ -20,7 +19,6 @@ const App = () => (
     <Route path="/feed/textform" component={CreatePostContainer} />
     <Route path="/feed/imageform" component={CreateImagePostContainer} />
     <Route path="/feed/videoform" component={CreateVideoPostContainer} />
-
     {/*
      */}
     <Switch>

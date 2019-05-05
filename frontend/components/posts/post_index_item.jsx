@@ -18,10 +18,6 @@ class PostIndexItem extends React.Component {
   
   render(){
     
-
-    // const numLikes = Object.keys(this.props.likes).length
-    // const isLiked = this.props.likes[this.props.userId];
-  
     const imagePost = () => <img src={this.props.post.image_url} />;
   
     const videoPost = () => (
@@ -105,7 +101,14 @@ class PostIndexItem extends React.Component {
                 */}
                 <div className="post-notes-inner">
                   {/* LIKE HEART*/}
-                  <LikeButton post_id={this.props.post.id} createLike={this.props.createLike} isLiked={this.state.isLiked} numLikes={this.state.numLikes}/>
+                  <LikeButton 
+                    post_id={this.props.post.id} 
+                    createLike={this.props.createLike} 
+                    deleteLike={this.props.deleteLike}
+                    isLiked={this.state.isLiked} 
+                    numLikes={this.state.numLikes}
+
+                    />
                 </div>
               </div>
               <div className="post-controls">
