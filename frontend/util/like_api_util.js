@@ -12,9 +12,9 @@ export const getLikes = () => {
   });
 };
 
-// export const deleteLike = like => {
-//   return $.ajax({
-//     method: "DELETE",
-//     url: `/api/posts/${post.id}/likes`
-//   });
-// };
+export const deleteLike = post => {
+  return $.ajax({
+    method: "DELETE",
+    url: `/api/posts/${post.post_id}/likes`
+  });
+};
