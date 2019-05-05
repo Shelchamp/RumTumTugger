@@ -17,8 +17,8 @@ class Greeting extends React.Component {
   handleLogin(e) {
     e.preventDefault();
     const user = this.users[Math.floor(Math.random() * 3)];
-    this.props.login(user).then(() => this.props.history.push("/feed"));
-    setTimeout();
+    this.props.login(user).then(
+      setTimeout(() => this.props.history.push("/feed"), 1000));
   }
 
   // DEMO LOGIN BUTTON

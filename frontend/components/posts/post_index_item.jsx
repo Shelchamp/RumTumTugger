@@ -4,19 +4,11 @@ import LikeButton from "../likes/like_button";
 class PostIndexItem extends React.Component {
   constructor(props){
     super(props)
-    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      numLikes : Object.keys(this.props.likes).length,
+      isLiked : this.props.likes[this.props.userId]
+    }
   }
-  handleClick(e) {
-    console.log("You tried to submit");
-    e.preventDefault();
-    this.props.createLike({post_id: this.props.post.id}).then(
-      setTimeout(() => {
-        // Update
-      }, 1000)
-    );
-    // console.log(this.props.createLike({post_id: this.props.post.id}))
-  }
-
   
     /*
     let user_id = this.props.post.user_id;
@@ -27,8 +19,8 @@ class PostIndexItem extends React.Component {
   render(){
     
 
-    const numLikes = Object.keys(this.props.likes).length
-    const isLiked = this.props.likes[this.props.userId];
+    // const numLikes = Object.keys(this.props.likes).length
+    // const isLiked = this.props.likes[this.props.userId];
   
     const imagePost = () => <img src={this.props.post.image_url} />;
   
@@ -111,9 +103,9 @@ class PostIndexItem extends React.Component {
                 {/* 
                   TURN NOTES INTO LIKES
                 */}
-                <div className="post-notes-inner" onClick={this.handleClick}>
+                <div className="post-notes-inner">
                   {/* LIKE HEART*/}
-                  <LikeButton isLiked={isLiked} numLikes={numLikes}/>
+                  <LikeButton post_id={this.props.post.id} createLike={this.props.createLike} isLiked={this.state.isLiked} numLikes={this.state.numLikes}/>
                 </div>
               </div>
               <div className="post-controls">
