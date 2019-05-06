@@ -16,7 +16,6 @@ class LikeButton extends React.Component {
     let numLikes =  this.state.numLikes;
     if (!isLiked) {
       // If it's currently not liked...
-      console.log("Send nudes")
       numLikes++;
       this.props.createLike({ post_id: this.props.post_id }).then(
         setTimeout(() => {
@@ -27,7 +26,6 @@ class LikeButton extends React.Component {
       )
     } else {
       // If it's already liked...
-      console.log("They see me rollin")
       numLikes--;
       this.props.deleteLike({ post_id: this.props.post_id }).then(
         setTimeout(() => {
@@ -44,7 +42,6 @@ class LikeButton extends React.Component {
     const isLiked = this.state.isLiked;
     
     // Conditionally render like button. Prevent from liking twice
-    // let handleClick = isLiked ? () => console.log("YEEET") : this.handleClick // Implement delete here
     let handleClick = this.handleClick // Implement delete here
     
     
