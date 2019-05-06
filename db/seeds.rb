@@ -147,14 +147,146 @@ dum_like5 = {
   user_id: user2.id 
 }
 
-dum_like5 = {
-  post_id: post3.id, 
-  user_id: user1.id 
-}
-
 like1 = Like.create(dum_like1)
 like2 = Like.create(dum_like2)
 like3 = Like.create(dum_like3)
 like4 = Like.create(dum_like4)
 like5 = Like.create(dum_like5)
+
+# Seed more data
+
+candela = {
+  post_type: 'image',
+  title: '',
+  body: 'Meet the future head on!',
+  image_url: 'https://i.imgur.com/4fsglV4.jpg',
+  user_id: user3.id
+}
+Post.create(candela)
+
+stone_free = {
+  post_type: 'image',
+  title: '',
+  body: 'Stone Free, to do what I please',
+  image_url: 'https://i.imgur.com/WnWiN3J.jpg',
+  user_id: user3.id
+}
+Post.create(stone_free)
+
+the_gang = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/sgFCotB.jpg',
+  user_id: user1.id
+}
+Post.create(the_gang)
+
+he_can = {
+  post_type: 'image',
+  title: '',
+  body: 'Give him space... he can do it!',
+  image_url: 'https://i.imgur.com/Dkl0EO3.jpg',
+  user_id: user2.id
+}
+Post.create(he_can)
+
+promise = {
+  post_type: 'image',
+  title: '',
+  body: 'A promise is a promise, old friend',
+  image_url: 'https://i.imgur.com/yPX6Qyp.jpg',
+  user_id: user3.id
+}
+Post.create(promise)
+
+link = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/K0TGjBY.jpg',
+  user_id: user1.id
+}
+Post.create(link)
+
+dj = {
+  post_type: 'image',
+  title: '',
+  body: 'Keep it clean',
+  image_url: 'https://i.imgur.com/RaevVJS.jpg',
+  user_id: user2.id
+}
+Post.create(dj)
+
+wururu = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/AfZl62W.png',
+  user_id: user1.id
+}
+Post.create(wururu)
+
+hello_boss = {
+  post_type: 'image',
+  title: '',
+  body: 'Hello? Boss?',
+  image_url: 'https://i.imgur.com/WATAf4o.png',
+  user_id: user1.id
+}
+Post.create(hello_boss)
+
+feel_good = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/3GEkQur.png',
+  user_id: user2.id
+}
+Post.create(feel_good)
+
+love = {
+  post_type: 'image',
+  title: '',
+  body: 'My love is invincible',
+  image_url: 'https://i.imgur.com/alhrfoL.png',
+  user_id: user3.id
+}
+Post.create(love)
+
+sol = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/BT47Hfx.jpg',
+  user_id: user3.id
+}
+Post.create(sol)
+
+cat_weight = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/WUElSWD.jpg',
+  user_id: user2.id
+}
+Post.create(cat_weight)
+
+alien_des = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/JCed5IO.jpg',
+  user_id: user1.id
+}
+Post.create(alien_des)
+
+dear = {
+  post_type: 'image',
+  title: '',
+  body: '',
+  image_url: 'https://i.imgur.com/rKs48Ut.jpg',
+  user_id: user2.id
+}
+Post.create(dear)
 
