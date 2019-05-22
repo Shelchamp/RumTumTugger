@@ -5,6 +5,9 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     // debugger
+    this.state = {
+      sInput : ""
+  }
     this.handleLogout = this.handleLogout.bind(this);
   }
 
@@ -13,7 +16,41 @@ class NavBar extends React.Component {
     this.props.logout();
   }
 
+  handleInput(e) {
+    this.setState({sInput : e.target.value})
+  }
+
+  // Autocomplete
+  filterSearch(){
+    let matches = this.props.users.filter(user =>{
+      let input = this.state.sInput.toLocaleLowerCase();
+      // console.log(user)
+      if (input === user.slice(0, input.length).toLocaleLowerCase()) return user; 
+    })
+    return matches;
+  }
+
+  
+  
   render() {
+    // Search results
+    const Results = props => {
+      let dataItems = props.map((data, i) =>{
+        return <li key={i}>{data}</li>
+      })
+      return <ul>{dataItems}</ul>
+    } 
+    const results = this.state.sInput === "" ? [] : Results(this.filterSearch());
+    // Search bar
+    const searchBar = <input
+      className='search-field'
+      type="text"
+      value= {this.state.sInput}
+      placeholder="Search RumTumTugger"
+      name="q"
+      onChange={this.handleInput.bind(this)}
+    />
+
     //show signup
     const currentlyOnLogin = () => (
       <div className="nav-right">
@@ -79,7 +116,7 @@ class NavBar extends React.Component {
               name="q"
             />
           */}
-
+          
           {button}
         </div>
       </div>
@@ -101,7 +138,7 @@ class NavBar extends React.Component {
               name="q"
               />
           */}
-
+          {searchBar}
           {button}
         </div>
       </div>
@@ -121,7 +158,13 @@ class NavBar extends React.Component {
       button = logoutButton();
     }
 
-    return <div className="div-fix">{navBar}</div>;
+    return ( 
+      <div>
+        <div className="div-fix">{navBar}</div>
+        <article>{results}</article>
+      </div>
+    )
+      
   }
 }
 
