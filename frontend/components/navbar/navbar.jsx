@@ -40,13 +40,17 @@ class NavBar extends React.Component {
       })
       return <ul>{dataItems}</ul>
     } 
+
+    // Conditional style class
     const results = this.state.sInput === "" ? [] : Results(this.filterSearch());
+    const searchStyle = results.length === 0 ? "hidden" : "dropdown-content";
+    
     // Search bar
     const searchBar = <input
       className='search-field'
       type="text"
       value= {this.state.sInput}
-      placeholder="Search RumTumTugger"
+      placeholder="Search Posts by User"
       name="q"
       onChange={this.handleInput.bind(this)}
     />
@@ -107,15 +111,6 @@ class NavBar extends React.Component {
             <Link to="/feed">{homeButton}</Link>
             <div className="logo-img" />
           </h1>
-
-          {/* SEARCH BAR
-            <input
-              className="search-field outside"
-              type="text"
-              placeholder="Search RumTumTugger"
-              name="q"
-            />
-          */}
           
           {button}
         </div>
@@ -130,15 +125,10 @@ class NavBar extends React.Component {
             <div className="logo-img" />
           </h1>
 
-          {/* SEARCH BAR
-            <input
-              className='search-field'
-              type="text"
-              placeholder="Search RumTumTugger"
-              name="q"
-              />
-          */}
-          {searchBar}
+          <div className="dropdown">
+            {searchBar}
+            <article className={searchStyle}>{results}</article>
+          </div>
           {button}
         </div>
       </div>
@@ -158,12 +148,7 @@ class NavBar extends React.Component {
       button = logoutButton();
     }
 
-    return ( 
-      <div>
-        <div className="div-fix">{navBar}</div>
-        <article>{results}</article>
-      </div>
-    )
+    return  <div className="div-fix">{navBar}</div>
       
   }
 }
